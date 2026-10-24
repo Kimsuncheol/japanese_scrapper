@@ -1,0 +1,43 @@
+name: Daily Japanese lessons
+on:
+  schedule:
+    - cron: '0 16 * * *' # 01:00 Asia/Seoul the following day
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'OCR batch size (0 = entire backlog)'
+        default: '10'
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: japanese-archive-writer
+  cancel-in-progress: false
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Discover archive and transcribe batch
+        env:
+          OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+          OLLAMA_MODEL: ${{ vars.OLLAMA_MODEL || 'gemma4:31b' }}
+          OLLAMA_BASE_URL: https://ollama.com
+          BATCH_LIMIT: ${{ inputs.limit || '10' }}
+        run: python -m scraper.cli --limit "$BATCH_LIMIT"
+      - name: Save progress, including failed attempts
+        if: ${{ always() }}
+        run: |
+          git config user.name 'Japanese archive bot'
+          git config user.email 'archive-bot@users.noreply.github.com'
+          git add data/articles.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update Japanese lesson archive'
+            git push
+          fi
