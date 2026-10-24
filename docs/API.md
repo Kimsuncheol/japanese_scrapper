@@ -100,6 +100,10 @@ After discovery, `coverage` contains `discovered_at` (ISO 8601 timestamp with Se
 
 Returns `200` with `{"status": "ok"}`. This checks Flask availability; it does not test upstream services, model credentials, or archive completeness.
 
+## Furigana display
+
+HTML lesson titles, expressions, and Japanese example sentences render supplied readings as semantic `<ruby>` annotations above kanji runs only. Kana and punctuation are not annotated. Consecutive kanji use word-level readings rather than guessed character-by-character pronunciation. Missing, inconsistent, or ambiguous readings leave the source text unannotated. API responses continue to provide the original plain `japanese` and full `reading` strings; no HTML is added to JSON fields.
+
 ## HTML pages
 
 - `GET /`: renders the article list with the same query parameters, defaults, filtering, pagination, and validation as `/api/articles`.

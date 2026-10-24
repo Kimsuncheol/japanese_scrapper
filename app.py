@@ -2,9 +2,11 @@ import math
 from flask import Flask, abort, jsonify, render_template, request
 from dotenv import load_dotenv
 from scraper.storage import read
+from scraper.furigana import furigana
 
 load_dotenv()
 app = Flask(__name__)
+app.jinja_env.filters["furigana"] = furigana
 
 
 def listing():
