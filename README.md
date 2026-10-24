@@ -62,7 +62,7 @@ The workflow requests ingestion daily at **01:00 Asia/Seoul**, which is **16:00 
 
 Render Free sleeps after inactivity, loses filesystem changes on restart/redeploy, and provides no free persistent disk or free cron service. Therefore an in-process Flask scheduler cannot reliably meet this requirement. The external workflow commits its results to GitHub; Render redeploys them. A cold Render service can take time to respond. This architecture has no strict exactly-01:00 guarantee.
 
-This project has deployment configuration, but deploying requires a GitHub repository and Render account connection. No hosted deployment is implied by a local preview.
+The project is deployed at **https://japanese-scraper.onrender.com** on Render Free in Singapore, serving the GitHub repository's `master` branch with automatic deployment on commits. The GitHub Actions `OLLAMA_API_KEY` secret is configured, and the daily workflow is active. Dashboard: https://dashboard.render.com/web/srv-dbea44i9lscs73af1dpg .
 
 ## API and checks
 

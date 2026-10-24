@@ -3,6 +3,8 @@ services:
     name: japanese-scraper
     runtime: python
     plan: free
+    region: singapore
+    branch: master
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 2
     healthCheckPath: /health

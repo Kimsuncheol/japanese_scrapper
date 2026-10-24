@@ -2,6 +2,8 @@
 
 This document describes the current Flask API in `app.py` and lesson schema in `scraper/models.py`. Update it in the same change as any API contract change (see `AGENTS.md`).
 
+Production base URL: `https://japanese-scraper.onrender.com`. Render Free may need time to wake after inactivity. Local examples below use `http://localhost:5000`; substitute the production base URL for hosted requests.
+
 All endpoints are read-only and require no authentication. Successful API responses use `application/json`. Errors currently use Flask's default HTML error responses, including on `/api/` routes. No API endpoint starts ingestion or accepts an Ollama key.
 
 ## List articles
