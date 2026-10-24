@@ -5,18 +5,21 @@ on:
   workflow_dispatch:
     inputs:
       limit:
-        description: 'OCR batch size (0 = entire backlog)'
-        default: '10'
+        description: 'OCR batch size (0 = full archive with automatic continuation)'
+        default: '0'
         required: true
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: japanese-archive-writer
   cancel-in-progress: false
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    timeout-minutes: 40
+    env:
+      BATCH_LIMIT: ${{ inputs.limit || '0' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -29,9 +32,9 @@ jobs:
           OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
           OLLAMA_MODEL: ${{ vars.OLLAMA_MODEL || 'gemma4:31b' }}
           OLLAMA_BASE_URL: https://ollama.com
-          BATCH_LIMIT: ${{ inputs.limit || '10' }}
-        run: python -m scraper.cli --limit "$BATCH_LIMIT"
+        run: python -m scraper.cli --limit "$BATCH_LIMIT" --workers 3 --max-seconds 1200 --summary "$RUNNER_TEMP/batch-summary.json"
       - name: Save progress, including failed attempts
+        id: save
         if: ${{ always() }}
         run: |
           git config user.name 'Japanese archive bot'
@@ -39,5 +42,27 @@ jobs:
           git add data/articles.json
           if ! git diff --cached --quiet; then
             git commit -m 'Update Japanese lesson archive'
-            git push
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
           fi
+      - name: Continue full backfill while making progress
+        if: ${{ always() && steps.save.outcome == 'success' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json, os, pathlib, subprocess
+          path = pathlib.Path(os.environ['RUNNER_TEMP']) / 'batch-summary.json'
+          if not path.exists():
+              raise SystemExit('No batch summary; automatic continuation stopped.')
+          summary = json.loads(path.read_text())
+          print(json.dumps(summary))
+          if (os.environ['BATCH_LIMIT'] == '0' and summary['remaining']
+                  and summary['completed'] and not summary['blocked']):
+              subprocess.run(['gh', 'workflow', 'run', 'scrape.yml', '--ref',
+                              os.environ['GITHUB_REF_NAME'], '-f', 'limit=0'], check=True)
+          elif summary['remaining']:
+              print('Unfinished articles remain. See failures/quota before restarting.')
+          else:
+              print('All discovered lessons are transcribed.')
+          PY

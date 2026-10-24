@@ -34,7 +34,7 @@ Read the article's embedded `Fusion.globalContent` JSON and extract `content_ele
 ```sh
 # Index every published article without using the model:
 .venv/bin/python -m scraper.cli --discover-only
-# Resume ten articles, newest first:
+# Process ten articles manually, newest first:
 .venv/bin/python -m scraper.cli --limit 10
 # Process the complete remaining historical backlog (long, uses model quota):
 .venv/bin/python -m scraper.cli --limit 0
@@ -42,7 +42,7 @@ Read the article's embedded `Fusion.globalContent` JSON and extract `content_ele
 .venv/bin/python -m scraper.cli --url 'https://www.chosun.com/national/nie/japanese/2026/10/20/DABOV5NZCVFBFLI2SOGJQYMVRA/'
 ```
 
-Discovery and transcription are separate: indexed articles remain `pending` until their images produce valid lesson JSON. Failures become `error` and are retried in later batches. Successful articles are skipped. Progress is written atomically after each article. Run one writer at a time; GitHub Actions serializes runs. A full initial backfill requires processing all pending articles; ten/day is intentionally a small quota-conscious default, not immediate full historical OCR. Increase the manual batch limit to accelerate it.
+Discovery and transcription are separate: indexed articles remain `pending` until their images produce valid lesson JSON. Failures become `error` and are retried in later batches. Successful articles are skipped. Progress is written atomically after each article. Run one writer at a time; GitHub Actions serializes runs. A full initial backfill requires processing all pending articles; the daily workflow now defaults to the full backlog. It processes three articles concurrently for about 20 minutes, commits progress, and dispatches a continuation while progress is being made. Authentication/quota failures stop continuation; a run with no successful transcriptions also stops to prevent endless retries. Check workflow logs and rerun after resolving the failure. Manual CLI calls still default to ten articles.
 
 Cloud Ollama currently does not support enforced JSON-schema outputs. We prompt for JSON and validate using Pydantic with three attempts. The schema separates Japanese expressions, readings, Korean meanings, explanations, dialogue examples, notes, and uncertain text. OCR accuracy still requires checking the source image. Missing optional text stays empty; no guessed translation is required. Each successful record stores the model, original image URLs, article URL, and processing timestamp.
 
@@ -54,7 +54,7 @@ The included `render.yaml` configures a **Free** Flask web service. It serves ve
 
 1. Create a GitHub repository and push this project, including `data/articles.json`. Never commit `.env`.
 2. Add the key as the GitHub Actions repository secret **OLLAMA_API_KEY**. Optionally set repository variable **OLLAMA_MODEL**.
-3. Enable Actions and run **Daily Japanese lessons** manually for the initial backfill. The `limit` input accepts `0` for all remaining articles; a job has a 300-minute cap, so rerun to resume if needed. Retain the JSON progress commit even when individual articles fail.
+3. Enable Actions and run **Daily Japanese lessons** manually for the initial backfill (the default is now `0`). The `limit` input accepts `0` for all remaining articles; jobs save progress after approximately 20 minutes and automatically continue full-archive runs; each job has a 40-minute safety cap. Retain the JSON progress commit even when individual articles fail.
 4. In Render, choose **New → Blueprint**, connect that repository and apply `render.yaml`. Confirm the plan is Free. Enable automatic deployment on commits so each data update reaches the website.
 5. Open `/health`, `/`, and `/api/articles` to verify the deployment.
 

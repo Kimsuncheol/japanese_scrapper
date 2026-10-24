@@ -80,13 +80,13 @@ def test_repeated_feed_rejected(monkeypatch):
 
 
 def test_batch_failure_persists_and_does_not_block_pending(tmp_path, monkeypatch):
-    from scraper import cli, vision
+    from scraper import cli, vision, batch
     import sys
     monkeypatch.setenv('DATA_PATH', str(tmp_path / 'archive.json'))
     storage.write({'articles': [
         {'id':'bad','url':'https://www.chosun.com/bad','date':'2026-10-23','status':'error','attempts':1},
         {'id':'good','url':'https://www.chosun.com/good','date':'2026-10-22','status':'pending'}], 'coverage':{}})
-    monkeypatch.setattr(cli,'article_images',lambda url:['image'])
+    monkeypatch.setattr(batch,'article_images',lambda url:['image'])
     monkeypatch.setattr(vision,'extract',lambda urls: {'expressions':[{'japanese':'はい'}]})
     monkeypatch.setattr(sys,'argv',['scraper','--skip-discovery','--limit','1'])
     cli.main()
@@ -97,3 +97,42 @@ def test_batch_failure_persists_and_does_not_block_pending(tmp_path, monkeypatch
         cli.main()
     assert storage.read()['articles'][0]['attempts']==2
     assert 'secret-token' not in storage.path().read_text()
+
+
+def test_quota_stops_submitting_and_preserves_backlog(tmp_path, monkeypatch):
+    from scraper import batch
+    monkeypatch.setenv('DATA_PATH', str(tmp_path / 'archive.json'))
+    data = {'articles': [{'id':str(i),'url':str(i),'date':'2026-10-23','status':'pending'} for i in range(5)]}
+    class QuotaError(Exception):
+        status_code = 429
+    def quota(article):
+        raise QuotaError('private response')
+    monkeypatch.setattr(batch, 'transcribe', quota)
+    summary = batch.process(data, data['articles'], workers=1)
+    assert summary == {'completed':0,'failures':1,'blocked':True,'remaining':5}
+    assert data['articles'][0]['status'] == 'error'
+    assert all(a['status']=='pending' for a in data['articles'][1:])
+    assert 'private response' not in storage.path().read_text()
+
+
+def test_time_budget_saves_completed_work(tmp_path, monkeypatch):
+    from scraper import batch
+    monkeypatch.setenv('DATA_PATH', str(tmp_path / 'archive.json'))
+    data = {'articles': [{'id':str(i),'url':str(i),'date':'2026-10-23','status':'pending'} for i in range(3)]}
+    clock = iter([0,0,2])
+    monkeypatch.setattr(batch.time, 'monotonic', lambda:next(clock))
+    monkeypatch.setattr(batch, 'transcribe', lambda a: (['image'], {'expressions':[{'japanese':'はい'}]}))
+    summary = batch.process(data,data['articles'],workers=1,max_seconds=1)
+    assert summary['completed']==1 and summary['remaining']==2
+    assert storage.read()['articles'][0]['status']=='ready'
+
+
+def test_concurrent_processing_persists_all_results(tmp_path, monkeypatch):
+    from scraper import batch
+    monkeypatch.setenv('DATA_PATH', str(tmp_path / 'archive.json'))
+    data = {'articles': [{'id':str(i),'url':str(i),'date':'2026-10-23','status':'pending'} for i in range(12)]}
+    monkeypatch.setattr(batch, 'transcribe', lambda a: (['image'], {'expressions':[{'japanese':a['id']}]}))
+    summary = batch.process(data,data['articles'],workers=3)
+    assert summary['completed']==12 and summary['remaining']==0
+    assert len(storage.read()['articles'])==12
+    assert all(a['attempts']==1 and a['status']=='ready' for a in storage.read()['articles'])
