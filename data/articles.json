@@ -598,7 +598,88 @@
       "url": "https://www.chosun.com/national/nie/japanese/2026/10/08/Z4OWEB3H3VGRNAEXVDCK42OC74/",
       "date": "2026-10-08",
       "title": "[입에 착착 붙는 일본어] 매정하게 대하다",
-      "status": "pending"
+      "status": "ready",
+      "attempts": 1,
+      "images": [
+        "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/XHX3LSP3FVASVKQ666COMS5DYM.jpg"
+      ],
+      "lesson": {
+        "expressions": [
+          {
+            "japanese": "袖にする",
+            "reading": "そでにする",
+            "translation": "매정하게 대하다",
+            "explanation": "「袖にする」는 '손을 소매에 넣은 채 아무것도 하지 않는다'라는 뜻에서, '매정하게 대하다'라는 의미를 나타낸다. 「袖」는 '소매', 이때의 「～にする」는 '~의 상태로 두다'라는 의미로 쓰였다.",
+            "examples": [
+              {
+                "japanese": "取引先の田中商店、経営不振らしいですね。",
+                "reading": "とりひきさきのたなかしょうてん、けいえいふしんらしいですね。",
+                "translation": "거래처인 다나카 상점, 경영이 어려운 모양이네요."
+              },
+              {
+                "japanese": "かと言って、長年の付き合いだし、袖にするわけにもいかないだろう。",
+                "reading": "かといって、ながねんのつきあいだし、そでにするわけにもいかないだろう。",
+                "translation": "그렇다고 해도 오랜 세월 알고 지낸 사이이기도 하고, 매정하게 대할 수도 없겠지."
+              }
+            ]
+          },
+          {
+            "japanese": "取引先",
+            "reading": "とりひきさき",
+            "translation": "거래처",
+            "explanation": "",
+            "examples": []
+          },
+          {
+            "japanese": "～らしい",
+            "reading": "",
+            "translation": "~인 것 같다",
+            "explanation": "",
+            "examples": []
+          },
+          {
+            "japanese": "かと言って",
+            "reading": "かといって",
+            "translation": "그렇다고 해서",
+            "explanation": "",
+            "examples": []
+          },
+          {
+            "japanese": "長年",
+            "reading": "ながねん",
+            "translation": "긴 세월, 오랫동안",
+            "explanation": "",
+            "examples": []
+          },
+          {
+            "japanese": "付き合い",
+            "reading": "つきあい",
+            "translation": "교제, 친분 관계",
+            "explanation": "",
+            "examples": []
+          },
+          {
+            "japanese": "～し",
+            "reading": "",
+            "translation": "~기도 하고",
+            "explanation": "",
+            "examples": []
+          },
+          {
+            "japanese": "～わけにもいかない",
+            "reading": "",
+            "translation": "~할 수도 없다",
+            "explanation": "",
+            "examples": []
+          }
+        ],
+        "notes": [
+          "*한 가지 이유나 사실을 들어, 그 밖에도 이유나 사실이 있음을 암시함"
+        ],
+        "uncertain_text": []
+      },
+      "model": "gemma4:31b",
+      "processed_at": "2026-10-24T21:20:57.078946+09:00"
     },
     {
       "id": "IPIRN6RLERBUNKW7PKCR2XK72A",
@@ -41671,7 +41752,7 @@
     }
   ],
   "coverage": {
-    "discovered_at": "2026-10-24T20:24:06.713694+09:00",
+    "discovered_at": "2026-10-24T21:20:51.824267+09:00",
     "first_date": "2003-11-11",
     "latest_date": "2026-10-23",
     "feed_count": 5878
