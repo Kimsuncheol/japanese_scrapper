@@ -1,6 +1,85 @@
 {
   "articles": [
     {
+      "id": "W3A6SF3R6JEN7JL2EOBYUTKGNE",
+      "url": "https://www.chosun.com/national/nie/japanese/2026/10/28/W3A6SF3R6JEN7JL2EOBYUTKGNE/",
+      "date": "2026-10-28",
+      "title": "[입에 착착 붙는 일본어] 가랑비, 이슬비",
+      "status": "ready",
+      "attempts": 1,
+      "images": [
+        "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/6RSUSKEZPNFKPN7AL37CZB5MOU.jpg"
+      ],
+      "lesson": {
+        "expressions": [
+          {
+            "japanese": "小雨",
+            "reading": "こさめ",
+            "translation": "가랑비, 이슬비",
+            "explanation": "「小雨」는 ‘가랑비, 이슬비’라는 뜻이다. 이 외에 비를 나타내는 표현으로는 「にわか雨」(소나기), 「大雨」(큰비), 「土砂降り」(비가 욕수같이 내림, 장대비) 등이 있다.",
+            "examples": [
+              {
+                "japanese": "A: このくらいでしたら、傘を差さなくても大丈夫そうですね。",
+                "reading": "コノ クライ デ シタ ラ カサ オ サ サ ナ ク テ モ ダイジョー ブ ソー デ ス ネ",
+                "translation": "A 이 정도라면 우산을 쓰지 않아도 괜찮을 것 같네요."
+              },
+              {
+                "japanese": "B: そうでしょうか。濡れてしまいますよ。",
+                "reading": "ソ ー デ ショ ー カ ヌ レ テ シ マ イ マ ス ヨ",
+                "translation": "B 그럴까요? 젖고 말 거예요."
+              },
+              {
+                "japanese": "A: 小雨ですし、大丈夫だと思います。",
+                "reading": "コサメ デ ス シ ダイジョー ブ ダ ト オモ イ マ ス",
+                "translation": "A 가랑비니까, 괜찮을 것 같아요."
+              }
+            ]
+          },
+          {
+            "japanese": "傘を差す",
+            "reading": "かさ さす",
+            "translation": "우산을 쓰다",
+            "explanation": "",
+            "examples": []
+          },
+          {
+            "japanese": "大丈夫",
+            "reading": "だいじょうぶ",
+            "translation": "괜찮음",
+            "explanation": "",
+            "examples": []
+          },
+          {
+            "japanese": "濡れる",
+            "reading": "ぬれる",
+            "translation": "젖다",
+            "explanation": "",
+            "examples": []
+          },
+          {
+            "japanese": "~てしまう",
+            "reading": "",
+            "translation": "~해 버리다, ~하고 말다",
+            "explanation": "",
+            "examples": []
+          },
+          {
+            "japanese": "~し",
+            "reading": "",
+            "translation": "~이기도 하니, ~이니까",
+            "explanation": "",
+            "examples": []
+          }
+        ],
+        "notes": [
+          "형용사의 어간+そうだ ~일 것 같다"
+        ],
+        "uncertain_text": []
+      },
+      "model": "gemma4:31b",
+      "processed_at": "2026-10-28T01:10:42.608564+09:00"
+    },
+    {
       "id": "Q6ZJZYIY3FCNNK4LJNE4IEVTBI",
       "url": "https://www.chosun.com/national/nie/japanese/2026/10/27/Q6ZJZYIY3FCNNK4LJNE4IEVTBI/",
       "date": "2026-10-27",
@@ -30756,11 +30835,11 @@
       "date": "2024-08-30",
       "title": "[입에 착착 붙는 일본어] 수완을 발휘하다",
       "status": "error",
-      "attempts": 3,
+      "attempts": 4,
       "images": [
         "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/X4HOH4WZIFD5FD5SCEROHBFFS4.jpg"
       ],
-      "error": "ReadTimeout"
+      "error": "ValidationError"
     },
     {
       "id": "2ROY7EZLXJC7DK2AYE3A6AW3F4",
@@ -51353,7 +51432,7 @@
       "date": "2023-02-24",
       "title": "일본은행 차기 총재 “금융 완화 지속하겠다”",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "images": [
         "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/SMYDP5QQOBP2HA22I5RGKBKGOM.jpg"
       ],
@@ -59074,7 +59153,7 @@
       "date": "2022-07-27",
       "title": "日 코로나 난민 속출... 39도 발열 환자, 검사 받으려고 30군데 전화",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "images": [
         "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/4UZYWQ6M5FNBNMKMT4PBUTUW2I.jpg"
       ],
@@ -60453,7 +60532,7 @@
       "date": "2022-06-27",
       "title": "러시아 원유 사들이는 중국·인도...G7 경제 제재 안먹히네",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "images": [
         "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/LWSSHUXH7VJFPEUGRGRVW7JBJU.jpg"
       ],
@@ -69786,7 +69865,7 @@
       "date": "2021-10-21",
       "title": "日 활화산 아소산 분화, 화산재 3.5㎞ 상공까지 치솟아",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "images": [
         "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/S6K5HWAMZNC27EYMXE4EU5RXFE.jpg"
       ],
@@ -84051,7 +84130,7 @@
       "date": "2020-08-12",
       "title": "[입에 착착 붙는 일본어] 억울한 죄를 뒤집어쓰다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -168057,7 +168136,7 @@
       "date": "2014-04-17",
       "title": "[스피킹이 강해지는 일본어] 의심을 품다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "images": [
         "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/6Y3I337G5EKQCZZKDGM7IVTSDU.jpg"
       ],
@@ -183404,7 +183483,7 @@
       "date": "2013-03-04",
       "title": "[스피킹이 강해지는 일본어] (창피해서) 얼굴이 화끈 달아오르다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -183779,7 +183858,7 @@
       "date": "2013-02-20",
       "title": "[스피킹이 강해지는 일본어] 전혀, 도무지",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -185846,7 +185925,7 @@
       "date": "2012-12-20",
       "title": "[스피킹이 강해지는 일본어] 뜻, 취지",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -189142,7 +189221,7 @@
       "date": "2012-09-19",
       "title": "[스피킹이 강해지는 일본어] 대략적임",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -190307,7 +190386,7 @@
       "date": "2012-08-15",
       "title": "[스피킹이 강해지는 일본어] 압수하다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -192109,7 +192188,7 @@
       "date": "2012-06-22",
       "title": "[스피킹이 강해지는 일본어] (적당히)받아넘기다, 한 귀로 듣고 한 귀로 흘리다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -192686,7 +192765,7 @@
       "date": "2012-06-05",
       "title": "[스피킹이 강해지는 일본어] 치유하다, 달래다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -196131,7 +196210,7 @@
       "date": "2012-02-22",
       "title": "[스피킹이 강해지는 일본어] 뾰로통해지다, 샐쭉해지다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -198502,7 +198581,7 @@
       "date": "2011-12-08",
       "title": "[스피킹이 강해지는 일본어] 아니나 다를까, 예상한 대로",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -202155,7 +202234,7 @@
       "date": "2011-08-19",
       "title": "[스피킹이 강해지는 일본어] 시류에 편승하다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -202627,7 +202706,7 @@
       "date": "2011-08-05",
       "title": "[스피킹이 강해지는 일본어] 솜씨를 발휘하다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -202636,7 +202715,7 @@
       "date": "2011-08-04",
       "title": "[스피킹이 강해지는 일본어] 실력이 향상되다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -204958,7 +205037,7 @@
       "date": "2011-05-26",
       "title": "[스피킹이 강해지는 일본어] (음식을) 배달시켜 먹다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -206233,7 +206312,7 @@
       "date": "2011-04-19",
       "title": "[스피킹이 강해지는 일본어] 제대로 ~못 하다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -206285,7 +206364,7 @@
       "date": "2011-04-15",
       "title": "[스피킹이 강해지는 일본어] 다리가 얼어붙다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -208746,7 +208825,7 @@
       "date": "2011-01-28",
       "title": "[스피킹이 강해지는 일본어] 자만하다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -209101,7 +209180,7 @@
       "date": "2011-01-17",
       "title": "[스피킹이 강해지는 일본어] ~가 있기 때문에",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -212558,7 +212637,7 @@
       "date": "2010-09-30",
       "title": "[스피킹이 강해지는 일본어] (흥에 겨워)도를 넘다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -214089,7 +214168,7 @@
       "date": "2010-08-13",
       "title": "[스피킹이 강해지는 일본어] 와-, 멋진 분이시네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -217711,7 +217790,7 @@
       "date": "2010-05-12",
       "title": "[싱싱한 일본어] 부장님 졸고 있어",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -220771,7 +220850,7 @@
       "date": "2010-02-22",
       "title": "[싱싱한 일본어] 무릎에 피가 나요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -222364,7 +222443,7 @@
       "date": "2010-01-08",
       "title": "[싱싱한 일본어] 옷차림에도 신경 써요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -222373,7 +222452,7 @@
       "date": "2010-01-07",
       "title": "[싱싱한 일본어] 보기 좋아졌어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -223375,7 +223454,7 @@
       "date": "2009-12-10",
       "title": "[싱싱한 일본어] 창문에서 바다를 볼 수 있어 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -225273,7 +225352,7 @@
       "date": "2009-10-22",
       "title": "[싱싱한 일본어] 날 의심하는 거야 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -226534,7 +226613,7 @@
       "date": "2009-09-15",
       "title": "[싱싱한 일본어] 벌컥벌컥 마시네요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -228590,7 +228669,7 @@
       "date": "2009-07-20",
       "title": "[싱싱한 일본어] 우울해 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -232378,7 +232457,7 @@
       "date": "2009-04-08",
       "title": "[싱싱한 일본어] 오늘은 어떤 양복을 입을 거야",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -232620,7 +232699,7 @@
       "date": "2009-04-01",
       "title": "[싱싱한 일본어] 일정 넣지마",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -234031,7 +234110,7 @@
       "date": "2009-02-20",
       "title": "[싱싱한 일본어] 이제 베테랑이네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -234382,7 +234461,7 @@
       "date": "2009-02-11",
       "title": "[싱싱한 일본어] 불이 밝혀져요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -235833,7 +235912,7 @@
       "date": "2009-01-03",
       "title": "[싱싱한 일본어] 연하장, 몇 장 도착했어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -235842,7 +235921,7 @@
       "date": "2009-01-02",
       "title": "[싱싱한 일본어] 올해도 열심히 합시다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -240103,7 +240182,7 @@
       "date": "2008-09-25",
       "title": "[싱싱한 일본어] 아주 신기한 것들뿐이어서 신선했어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -241151,7 +241230,7 @@
       "date": "2008-08-29",
       "title": "[싱싱한 일본어] 매끄러워서 정말 쓰기 편하네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -241983,7 +242062,7 @@
       "date": "2008-08-11",
       "title": "[싱싱한 일본어] 정말 멋진 전망이네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -241992,7 +242071,7 @@
       "date": "2008-08-09",
       "title": "[싱싱한 일본어] 시원한 민트 맛이 나네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -242079,7 +242158,7 @@
       "date": "2008-08-07",
       "title": "[싱싱한 일본어] 정말 신선한 공기네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -243252,7 +243331,7 @@
       "date": "2008-07-09",
       "title": "[싱싱한 일본어] 매우 그리운 나라예요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -244409,7 +244488,7 @@
       "date": "2008-06-12",
       "title": "[싱싱한 일본어] 맛있어서 입에서 살살 녹는 것 같아",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -245414,7 +245493,7 @@
       "date": "2008-05-19",
       "title": "[싱싱한 일본어] 더욱더 심해지겠어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -246989,7 +247068,7 @@
       "date": "2008-04-10",
       "title": "[싱싱한 일본어] 놀고만 있어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -247219,7 +247298,7 @@
       "date": "2008-04-03",
       "title": "[싱싱한 일본어] 어떤 영화를 좋아해요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -247228,7 +247307,7 @@
       "date": "2008-04-02",
       "title": "[싱싱한 일본어] 규슈 날씨는 어땠어요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -247436,7 +247515,7 @@
       "date": "2008-03-27",
       "title": "[싱싱한 일본어] 제가 연락해 볼게요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -247445,7 +247524,7 @@
       "date": "2008-03-26",
       "title": "[싱싱한 일본어] 2시로 변경됐어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -247730,7 +247809,7 @@
       "date": "2008-03-19",
       "title": "[싱싱한 일본어] 신칸센은 운행하고 있나요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -247739,7 +247818,7 @@
       "date": "2008-03-18",
       "title": "[싱싱한 일본어] 모두 매진입니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -247921,7 +248000,7 @@
       "date": "2008-03-13",
       "title": "[싱싱한 일본어]   나라도 괜찮다면 상담에 응해 줄게  ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -247975,7 +248054,7 @@
       "date": "2008-03-11",
       "title": "[싱싱한 일본어] 기분 좋은 것 같네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -247984,7 +248063,7 @@
       "date": "2008-03-08",
       "title": "[싱싱한 일본어] 부장님, 기분 좋으시네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -247993,7 +248072,7 @@
       "date": "2008-03-07",
       "title": "[싱싱한 일본어] 승진이 결정됐거든요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248002,7 +248081,7 @@
       "date": "2008-03-06",
       "title": "[싱싱한 일본어] 해외여행이 당첨됐거든요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248215,7 +248294,7 @@
       "date": "2008-02-29",
       "title": "[싱싱한 일본어] 4년에 한 번인 윤년이니까요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248224,7 +248303,7 @@
       "date": "2008-02-28",
       "title": "[싱싱한 일본어] 무슨 말인지는 알겠는데요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248233,7 +248312,7 @@
       "date": "2008-02-27",
       "title": "[싱싱한 일본어] 그건 그런데요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248363,7 +248442,7 @@
       "date": "2008-02-23",
       "title": "[싱싱한 일본어] 그라면 안심하고 맡길 수 있겠군",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248372,7 +248451,7 @@
       "date": "2008-02-22",
       "title": "[싱싱한 일본어] 이태리 음식이 먹고 싶은데",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248381,7 +248460,7 @@
       "date": "2008-02-21",
       "title": "[싱싱한 일본어] 다행이야, 찬성해 줘서",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248390,7 +248469,7 @@
       "date": "2008-02-20",
       "title": "[싱싱한 일본어] 아-, 그거 괜찮네",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248399,7 +248478,7 @@
       "date": "2008-02-19",
       "title": "[싱싱한 일본어] 깨 버렸어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248408,7 +248487,7 @@
       "date": "2008-02-18",
       "title": "[싱싱한 일본어] 좀 더 공부했어야 했는데",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248417,7 +248496,7 @@
       "date": "2008-02-16",
       "title": "[싱싱한 일본어] 사지 말았어야 했나",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248530,7 +248609,7 @@
       "date": "2008-02-13",
       "title": "[싱싱한 일본어] 만족해 하시니 기뻐요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248669,7 +248748,7 @@
       "date": "2008-02-10",
       "title": "[싱싱한 일본어] 정말 로맨틱해",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248678,7 +248757,7 @@
       "date": "2008-02-06",
       "title": "[싱싱한 일본어] 넘어져도 전혀 안 아파요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248798,7 +248877,7 @@
       "date": "2008-02-02",
       "title": "[싱싱한 일본어] 구급차를 부르다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248859,7 +248938,7 @@
       "date": "2008-01-31",
       "title": "[싱싱한 일본어] 성격 급하군요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248868,7 +248947,7 @@
       "date": "2008-01-29",
       "title": "[싱싱한 일본어] 서글서글하고 재미있는 사람이에요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248877,7 +248956,7 @@
       "date": "2008-01-28",
       "title": "[싱싱한 일본어] 오랜만에 감동했어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -248950,7 +249029,7 @@
       "date": "2008-01-25",
       "title": "[싱싱한 일본어] 스토브 끄는 걸 깜박했어",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -249054,7 +249133,7 @@
       "date": "2008-01-22",
       "title": "[싱싱한 일본어] 컴퓨터가 안 켜져요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -249063,7 +249142,7 @@
       "date": "2008-01-21",
       "title": "[싱싱한 일본어] 눈길은 조심하지 않으면... ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -249072,7 +249151,7 @@
       "date": "2008-01-19",
       "title": "[싱싱한 일본어] 고향에 계신 어머니가 걱정이야 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -249339,7 +249418,7 @@
       "date": "2008-01-14",
       "title": "[싱싱한 일본어] 퇴원, 축하해요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -249348,7 +249427,7 @@
       "date": "2008-01-12",
       "title": "[싱싱한 일본어] 생일, 축하해",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -249659,7 +249738,7 @@
       "date": "2008-01-03",
       "title": "[싱싱한 일본어] 새해 길몽, 뭔지 알아요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -249668,7 +249747,7 @@
       "date": "2008-01-02",
       "title": "[싱싱한 일본어] 새해 복 많이 받으세요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -249677,7 +249756,7 @@
       "date": "2007-12-31",
       "title": "[싱싱한 일본어] 좋은 새해를 맞이하세요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -249686,7 +249765,7 @@
       "date": "2007-12-29",
       "title": "[싱싱한 일본어] 설날이 기다려져요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -249695,7 +249774,7 @@
       "date": "2007-12-28",
       "title": "[싱싱한 일본어] 오늘로 종무식이네요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -249775,7 +249854,7 @@
       "date": "2007-12-26",
       "title": "[싱싱한 일본어] 숙취인 것 같네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -249784,7 +249863,7 @@
       "date": "2007-12-25",
       "title": "[싱싱한 일본어] 메리 크리스마스 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -249950,7 +250029,7 @@
       "date": "2007-12-20",
       "title": "[싱싱한 일본어] 눈이 핑핑 돌 것 같아요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250003,7 +250082,7 @@
       "date": "2007-12-15",
       "title": "[싱싱한 일본어] 신경 쓰지 않아도 돼 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250012,7 +250091,7 @@
       "date": "2007-12-14",
       "title": "[싱싱한 일본어] 닦으면 지워지니까 괜찮아요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250021,7 +250100,7 @@
       "date": "2007-12-13",
       "title": "[싱싱한 일본어] 여기를 삭제하면 어떨까",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250075,7 +250154,7 @@
       "date": "2007-12-11",
       "title": "[싱싱한 일본어] 저한테는 어렵지 않을까 하고... ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250084,7 +250163,7 @@
       "date": "2007-12-10",
       "title": "[싱싱한 일본어] (시간이) 이른 편이 좋아요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250093,7 +250172,7 @@
       "date": "2007-12-08",
       "title": "[싱싱한 일본어] 더 연한 색이 좋아요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250102,7 +250181,7 @@
       "date": "2007-12-07",
       "title": "[싱싱한 일본어] 주위 사람에게 폐가 되니까요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250111,7 +250190,7 @@
       "date": "2007-12-06",
       "title": "[싱싱한 일본어] 얼룩이 안 빠졌어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250120,7 +250199,7 @@
       "date": "2007-12-04",
       "title": "[싱싱한 일본어] 개를 묶어 주지 않을래요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250177,7 +250256,7 @@
       "date": "2007-12-01",
       "title": "[싱싱한 일본어] 소리를 조금 줄여 주지 않을래요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250357,7 +250436,7 @@
       "date": "2007-11-27",
       "title": "[싱싱한 일본어] 바로 이동해 주세요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250459,7 +250538,7 @@
       "date": "2007-11-22",
       "title": "[싱싱한 일본어] 일본어를 잘하네요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250511,7 +250590,7 @@
       "date": "2007-11-20",
       "title": "[싱싱한 일본어] 이거 어제의 답례예요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250660,7 +250739,7 @@
       "date": "2007-11-15",
       "title": "[싱싱한 일본어] 월요일은 사정이 좋지 않은데요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250669,7 +250748,7 @@
       "date": "2007-11-14",
       "title": "[싱싱한 일본어] 비행기 예약을 하고 싶은데요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250774,7 +250853,7 @@
       "date": "2007-11-10",
       "title": "[싱싱한 일본어] 나베야키 우동 부탁해요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250935,7 +251014,7 @@
       "date": "2007-11-05",
       "title": "[싱싱한 일본어] 짧게 하면 어때요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -250990,7 +251069,7 @@
       "date": "2007-11-02",
       "title": "[싱싱한 일본어] 병원에 가는 편이 좋아요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -251086,7 +251165,7 @@
       "date": "2007-10-30",
       "title": "[싱싱한 일본어] 기대하고 있었는데 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -251095,7 +251174,7 @@
       "date": "2007-10-29",
       "title": "[싱싱한 일본어] 실망이야",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -251104,7 +251183,7 @@
       "date": "2007-10-27",
       "title": "[싱싱한 일본어] 기대 이하였지",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -251113,7 +251192,7 @@
       "date": "2007-10-26",
       "title": "[싱싱한 일본어] 역시 안 됐어 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -251208,7 +251287,7 @@
       "date": "2007-10-24",
       "title": "[싱싱한 일본어] 지하철이 빠른가요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -251280,7 +251359,7 @@
       "date": "2007-10-22",
       "title": "[싱싱한 일본어] 어, 정말이에요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -251352,7 +251431,7 @@
       "date": "2007-10-19",
       "title": "[싱싱한 일본어] 고민되네 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -251361,7 +251440,7 @@
       "date": "2007-10-18",
       "title": "[싱싱한 일본어] 벌써 헤어지는 건가요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -251416,7 +251495,7 @@
       "date": "2007-10-16",
       "title": "[싱싱한 일본어] 오늘이 마지막이에요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -251749,7 +251828,7 @@
       "date": "2007-10-06",
       "title": "[싱싱한 일본어] 정말 미안 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -251849,7 +251928,7 @@
       "date": "2007-10-03",
       "title": "[싱싱한 일본어] 정말 죄송합니다 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -251967,7 +252046,7 @@
       "date": "2007-09-29",
       "title": "[싱싱한 일본어] 이 한자 틀렸어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -251976,7 +252055,7 @@
       "date": "2007-09-28",
       "title": "[싱싱한 일본어] 일에는 지장이 없도록 해 주세요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -251985,7 +252064,7 @@
       "date": "2007-09-27",
       "title": "[싱싱한 일본어] 조금 전 대처는 서툴렀어요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -251994,7 +252073,7 @@
       "date": "2007-09-23",
       "title": "[싱싱한 일본어] 좀 더 주의하세요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -252064,7 +252143,7 @@
       "date": "2007-09-21",
       "title": "[싱싱한 일본어] 그렇게 말해 주니 기쁜데 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -252206,7 +252285,7 @@
       "date": "2007-09-17",
       "title": "[싱싱한 일본어] 쑥스럽네 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -252263,7 +252342,7 @@
       "date": "2007-09-14",
       "title": "[싱싱한 일본어] 도저히 쉰으로는 안 보여요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -252272,7 +252351,7 @@
       "date": "2007-09-13",
       "title": "[싱싱한 일본어] 부장님이 매우 만족해하셨어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -252281,7 +252360,7 @@
       "date": "2007-09-12",
       "title": "[싱싱한 밀본어] 글씨가 예쁘네요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -252290,7 +252369,7 @@
       "date": "2007-09-11",
       "title": "[싱싱한 일본어] 오늘 발표, 좋았어요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -252299,7 +252378,7 @@
       "date": "2007-09-10",
       "title": "[싱싱한 일본어] 아주 좋네요. ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -252308,7 +252387,7 @@
       "date": "2007-09-08",
       "title": "[싱싱한 일본어] 차라도 끓일까요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -252317,7 +252396,7 @@
       "date": "2007-09-07",
       "title": "[싱싱한 일본어] 제가 할 수 없을까요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -252326,7 +252405,7 @@
       "date": "2007-09-06",
       "title": "[싱싱한 일본어] 가방, 내가 들까요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -252398,7 +252477,7 @@
       "date": "2007-09-04",
       "title": "[싱싱한 일본어] 내가 봐 줄까요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -252407,7 +252486,7 @@
       "date": "2007-09-03",
       "title": "[싱싱한 일본어] 뭐 도와 드릴까요? ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -252522,7 +252601,7 @@
       "date": "2007-08-30",
       "title": "[싱싱한 일본어] 이 서류 박준수 씨에게 전해주세요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -252603,7 +252682,7 @@
       "date": "2007-08-28",
       "title": "[싱싱한 일본어] 이정희 씨에게는 내가 알려 둘게 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -252612,7 +252691,7 @@
       "date": "2007-08-27",
       "title": "[싱싱한 일본어] 자리를 양보하는 젊은 사람을 볼 수 없게 됐어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -252881,7 +252960,7 @@
       "date": "2007-08-20",
       "title": "[싱싱한 일본어] 아이 돌보는 거 힘드네",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -253130,7 +253209,7 @@
       "date": "2007-08-14",
       "title": "[싱싱한 일본어] 이 신문, 봐도 돼요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -253139,7 +253218,7 @@
       "date": "2007-08-13",
       "title": "[싱싱한 일본어] 이 초밥정식 맛있어 보이는데",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -253148,7 +253227,7 @@
       "date": "2007-08-10",
       "title": "[싱싱한 일본어] 산뜻한 거라도 먹을까요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -253157,7 +253236,7 @@
       "date": "2007-08-09",
       "title": "[싱싱한 일본어] 여름 안 타요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -253437,7 +253516,7 @@
       "date": "2007-08-02",
       "title": "[싱싱한 일본어] 유카타를 입고가요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -253513,7 +253592,7 @@
       "date": "2007-07-28",
       "title": "[싱싱한 일본어] 언제 출장에서 돌아왔어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -253522,7 +253601,7 @@
       "date": "2007-07-27",
       "title": "[싱싱한 일본어] 꼭 김용석 씨에게 부탁하고 싶어요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -253671,7 +253750,7 @@
       "date": "2007-07-23",
       "title": "[싱싱한 일본어] 이거 복사해 줄래요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -253726,7 +253805,7 @@
       "date": "2007-07-18",
       "title": "[싱싱한 일본어] 어디에 사세요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -253735,7 +253814,7 @@
       "date": "2007-07-17",
       "title": "[싱싱한 일본어] '제헌절'이란 무슨 날이에요?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -253744,7 +253823,7 @@
       "date": "2007-07-16",
       "title": "[싱싱한 일본어] 저 백화점 뒤에 있어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -253753,7 +253832,7 @@
       "date": "2007-07-14",
       "title": "[싱싱한 일본어] 이 단어 뭐라고 읽어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -253762,7 +253841,7 @@
       "date": "2007-07-13",
       "title": "[싱싱한 일본어] 주말에는 뭐 할 거예요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -253771,7 +253850,7 @@
       "date": "2007-07-12",
       "title": "[싱싱한 일본어] 어제 저녁에도 접대였어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -253827,7 +253906,7 @@
       "date": "2007-07-10",
       "title": "[싱싱한 일본어] 야구는 별로 흥미가 없어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -253884,7 +253963,7 @@
       "date": "2007-07-06",
       "title": "[싱싱한 일본어] 2차는 노래방 어때요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254093,7 +254172,7 @@
       "date": "2007-06-30",
       "title": "[싱싱한 일본어] 겨우 장마가 끝났네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254102,7 +254181,7 @@
       "date": "2007-06-29",
       "title": "[싱싱한 일본어] 더우면 식욕이 없어져요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254111,7 +254190,7 @@
       "date": "2007-06-28",
       "title": "[싱싱한 일본어] 식중독일지도 모르겠네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254120,7 +254199,7 @@
       "date": "2007-06-27",
       "title": "[싱싱한 일본어] 냉방기가 필요하겠네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254129,7 +254208,7 @@
       "date": "2007-06-26",
       "title": "[싱싱한 일본어] 요즘 같은 계절은 음식이 상하기 쉽군요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254190,7 +254269,7 @@
       "date": "2007-06-23",
       "title": "[싱싱한 일본어] 여름 휴가 계획은 세웠어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254199,7 +254278,7 @@
       "date": "2007-06-22",
       "title": "[싱싱한 일본어] 이번 주는 아직 계획이 없어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254208,7 +254287,7 @@
       "date": "2007-06-20",
       "title": "[싱싱한 일본어] 비가 억수같이 쏟아지네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254217,7 +254296,7 @@
       "date": "2007-06-19",
       "title": "[싱싱한 일본어] 활짝 개었네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254226,7 +254305,7 @@
       "date": "2007-06-15",
       "title": "[싱싱한 일본어] 좋은 날씨네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254355,7 +254434,7 @@
       "date": "2007-06-12",
       "title": "[싱싱한 일본어] 돌아오는 대로 전화 부탁할 수 있을까요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254364,7 +254443,7 @@
       "date": "2007-06-11",
       "title": "[싱싱한 일본어] 메모를 부탁합니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254373,7 +254452,7 @@
       "date": "2007-06-09",
       "title": "[싱싱한 일본어] 또 장난 전화야 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254429,7 +254508,7 @@
       "date": "2007-06-07",
       "title": "[싱싱한 일본어] 항상 신세지고 있습니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254438,7 +254517,7 @@
       "date": "2007-06-05",
       "title": "[싱싱한 일본어] 몇 번으로 거셨어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254627,7 +254706,7 @@
       "date": "2007-05-31",
       "title": "[싱싱한 일본어] 오늘은 잘 먹었습니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254835,7 +254914,7 @@
       "date": "2007-05-24",
       "title": "[싱싱한 일본어] 어디에서 만날까요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -254940,7 +255019,7 @@
       "date": "2007-05-18",
       "title": "[싱싱한 일본어] 조금 짧게 해주시겠어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255153,7 +255232,7 @@
       "date": "2007-05-14",
       "title": "[싱싱한 일본어] L사이즈는 품절입니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255162,7 +255241,7 @@
       "date": "2007-05-12",
       "title": "[싱싱한 일본어] 포장해 주세요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255265,7 +255344,7 @@
       "date": "2007-05-09",
       "title": "[싱싱한 일본어] 이 흰 양말은 얼마에요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255274,7 +255353,7 @@
       "date": "2007-05-08",
       "title": "[싱싱한 일본어] 500엔짜리와 1,000엔짜리가 있어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255283,7 +255362,7 @@
       "date": "2007-05-07",
       "title": "[싱싱한 일본어] 딸기 한 팩 주세요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255292,7 +255371,7 @@
       "date": "2007-05-05",
       "title": "[싱싱한 일본어] 오늘은 어린이날이거든요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255349,7 +255428,7 @@
       "date": "2007-05-03",
       "title": "[싱싱한 일본어] 5시까지 부탁해요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255358,7 +255437,7 @@
       "date": "2007-05-02",
       "title": "[싱싱한 일본어] 매일 몇 시간 정도 자요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255494,7 +255573,7 @@
       "date": "2007-04-28",
       "title": "[싱싱한 일본어] 10시 반 영화 시간에는 맞출 수 없겠네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255503,7 +255582,7 @@
       "date": "2007-04-26",
       "title": "[싱싱한 일본어] 오늘은 몇 월 몇 일 입니까?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255512,7 +255591,7 @@
       "date": "2007-04-25",
       "title": "[싱싱한 일본어] 회의는 내일 오후 1시부터였죠",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255571,7 +255650,7 @@
       "date": "2007-04-23",
       "title": "[싱싱한 일본어] 이번 토요일은 일해요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255580,7 +255659,7 @@
       "date": "2007-04-21",
       "title": "[싱싱한 일본어] 생일은 언제예요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255589,7 +255668,7 @@
       "date": "2007-04-20",
       "title": "[싱싱한 일본어] 선생님, 이쪽은 저희 어머니예요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255598,7 +255677,7 @@
       "date": "2007-04-19",
       "title": "[싱싱한 일본어] 후배인 무라이 씨예요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255607,7 +255686,7 @@
       "date": "2007-04-18",
       "title": "[싱싱한 일본어] 잘 부탁합니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255667,7 +255746,7 @@
       "date": "2007-04-16",
       "title": "[싱싱한 일본어] ARC사업부의 이민정이라고 합니다.",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255756,7 +255835,7 @@
       "date": "2007-04-13",
       "title": "[싱싱한 일본어] 전공은 뭐예요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255941,7 +256020,7 @@
       "date": "2007-04-10",
       "title": "[싱싱한 일본어] 하시는 일은 뭐예요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -255950,7 +256029,7 @@
       "date": "2007-04-09",
       "title": "[일본어 한마디] 처음 뵙겠습니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -256009,7 +256088,7 @@
       "date": "2007-04-06",
       "title": "[싱싱한 일본어] 오랜만이에요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -256018,7 +256097,7 @@
       "date": "2007-04-05",
       "title": "[싱싱한 일본어] 먼저 실레하겠습니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -256027,7 +256106,7 @@
       "date": "2007-04-02",
       "title": "[싱싱한 일본어] 안녕하세요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -256036,7 +256115,7 @@
       "date": "2007-04-01",
       "title": "[일본어 한마디] 안녕하세요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -256045,7 +256124,7 @@
       "date": "2007-03-30",
       "title": "[일본어 한마디] 현금카드도 만드시겠습니까?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -256054,7 +256133,7 @@
       "date": "2007-03-28",
       "title": "[일본어 한마디] 도장이라는 뜻입니다. ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -256303,7 +256382,7 @@
       "date": "2007-03-22",
       "title": "[일본어 한마디] 아무래도 감기에 걸린 것 같아요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -256312,7 +256391,7 @@
       "date": "2007-03-21",
       "title": "[일본어 한마디] 충치가 되었군요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -256321,7 +256400,7 @@
       "date": "2007-03-20",
       "title": "[일본어 한마디] 미안해 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -256504,7 +256583,7 @@
       "date": "2007-03-15",
       "title": "[일본어 한마디] 매일 더운 날이 이어지네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -256563,7 +256642,7 @@
       "date": "2007-03-13",
       "title": "[일본어 한마디] 내 앞으로 온 우편물 없어?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -256572,7 +256651,7 @@
       "date": "2007-03-09",
       "title": "[일본어 한마디] 상당히 무거워 보이는데요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -256581,7 +256660,7 @@
       "date": "2007-03-09",
       "title": "[일본어 한마디] 지금 부재중입니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -256644,7 +256723,7 @@
       "date": "2007-03-06",
       "title": "[일본어 한마디] 벨소리 바꿨지?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -256653,7 +256732,7 @@
       "date": "2007-03-05",
       "title": "[일본어 한마디] 아니요, 아닌데요.",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -256722,7 +256801,7 @@
       "date": "2007-03-01",
       "title": "[일본어 한마디] 예, 104의 마에다입니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -256731,7 +256810,7 @@
       "date": "2007-02-28",
       "title": "[일본어 한마디] 메일로 보내 줄게요 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -257119,7 +257198,7 @@
       "date": "2007-02-19",
       "title": "[일본어 한마디] 야구 보러 가지 않을래?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -257204,7 +257283,7 @@
       "date": "2007-02-13",
       "title": "[일본어 한마디] 오길 잘했네",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -257213,7 +257292,7 @@
       "date": "2007-02-12",
       "title": "[일본어 한마디] 일본 축제를 본 적이 없거든요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -257278,7 +257357,7 @@
       "date": "2007-02-09",
       "title": "[일본어 한마디] 한 번도 본 적이 없어",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -257397,7 +257476,7 @@
       "date": "2007-02-06",
       "title": "[일본어 한마디] 어느 코스가 좋을 지 고민하고 있습니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -257406,7 +257485,7 @@
       "date": "2007-02-05",
       "title": "[일본어 한마디] 이 근처는 차가 없으면 움직이기 힘들거든요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -257467,7 +257546,7 @@
       "date": "2007-02-02",
       "title": "[일본어 한마디] 100포인트 모으면 1000엔 할인이 됩니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -257533,7 +257612,7 @@
       "date": "2007-01-31",
       "title": "[일본어 한마디] 모두 20% 할인이 됩니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -257628,7 +257707,7 @@
       "date": "2007-01-25",
       "title": "[일본어 한마디] 배달 담당자가 나가 있어서",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -257680,7 +257759,7 @@
       "date": "2007-01-23",
       "title": "[일본어 한마디] 비닐 봉투는 필요하십니까?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -257748,7 +257827,7 @@
       "date": "2007-01-19",
       "title": "[일본어 한마디] 유통 기한을 봐",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -257757,7 +257836,7 @@
       "date": "2007-01-18",
       "title": "[일본어 한마디] 뭐살래?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -257766,7 +257845,7 @@
       "date": "2007-01-17",
       "title": "[일본어 한마디] 디자인도 좋네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -257775,7 +257854,7 @@
       "date": "2007-01-16",
       "title": "[일본어 한마디] 이 주변이 끼는 것 같네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -257839,7 +257918,7 @@
       "date": "2007-01-14",
       "title": "[일본어 한마디] 일본의 추억이 될 것을 사고 싶습니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -257930,7 +258009,7 @@
       "date": "2007-01-11",
       "title": "[일본어 한마디] 셔틀버스를 이용하십시오 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -258010,7 +258089,7 @@
       "date": "2007-01-09",
       "title": "[일본어 한마디] 앞의 정류장에서 내려야 했어요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -258019,7 +258098,7 @@
       "date": "2007-01-08",
       "title": "[일본어 한마디] 어떻게(해서) 가면 돼?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -258180,7 +258259,7 @@
       "date": "2007-01-03",
       "title": "[일본어 한마디] 길을 잃은 것 같습니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -258249,7 +258328,7 @@
       "date": "2007-01-01",
       "title": "[일본어 한마디] 두 번째 모퉁이를 오른쪽으로 도세요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -258258,7 +258337,7 @@
       "date": "2006-12-29",
       "title": "[일본어 한마디] 여기서부터 어떻게 가면 됩니까?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -258267,7 +258346,7 @@
       "date": "2006-12-28",
       "title": "[일본어 한마디] 벌써 취한 것 같아서",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -258403,7 +258482,7 @@
       "date": "2006-12-25",
       "title": "[일본어 한마디] 계산 부탁합니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -258581,7 +258660,7 @@
       "date": "2006-12-20",
       "title": "[일본어 한마디] 요리를 조금씩 즐길 수 있습니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -258751,7 +258830,7 @@
       "date": "2006-12-15",
       "title": "[일본어 한마디] 무척 산뜻하네",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -258852,7 +258931,7 @@
       "date": "2006-12-12",
       "title": "[일본어 한마디] 받아도 되는 거야?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -258861,7 +258940,7 @@
       "date": "2006-12-11",
       "title": "[일본어 한마디] 배달시킬 테니깐 같이 먹자",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259106,7 +259185,7 @@
       "date": "2006-12-03",
       "title": "[일본어 한마디] 룸서비스를 부탁합니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259224,7 +259303,7 @@
       "date": "2006-11-26",
       "title": "[일본어 한마디] 모닝콜을 부탁할 수 있나요?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259233,7 +259312,7 @@
       "date": "2006-11-24",
       "title": "[일본어 한마디] 인터넷으로 찾고 있긴 한데",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259242,7 +259321,7 @@
       "date": "2006-11-13",
       "title": "[일본어 한마디] 그쪽으로 가자",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259251,7 +259330,7 @@
       "date": "2006-11-12",
       "title": "[일본어 한마디] 속도 줄여",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259301,7 +259380,7 @@
       "date": "2006-11-08",
       "title": "[일본어 한마디] 여기에 차를 세워도 괜찮아요?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259310,7 +259389,7 @@
       "date": "2006-11-05",
       "title": "[일본어 한마디] 여기, 비어 있나요?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259421,7 +259500,7 @@
       "date": "2006-10-26",
       "title": "[일본어 한마디] 택시 부탁하고 싶은데요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259476,7 +259555,7 @@
       "date": "2006-10-24",
       "title": "[일본어 한마디] 워싱턴호텔까지 부탁합니다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259485,7 +259564,7 @@
       "date": "2006-10-23",
       "title": "[일본어 한마디] 잘못 된 것 같아요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259494,7 +259573,7 @@
       "date": "2006-10-20",
       "title": "[일본어 한마디] 이 버스는 오쿠보거리에 가요?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259503,7 +259582,7 @@
       "date": "2006-10-18",
       "title": "[일본어 한마디] 롯폰기역은 여기에서 몇 번째입니까?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259512,7 +259591,7 @@
       "date": "2006-10-17",
       "title": "[일본어 한마디] 어떻게 가면 돼?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259521,7 +259600,7 @@
       "date": "2006-10-16",
       "title": "[일본어 한마디] 30분 정도예요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259588,7 +259667,7 @@
       "date": "2006-10-13",
       "title": "[일본어 한마디] 도쿄의 노선도를 주시겠습니까?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259597,7 +259676,7 @@
       "date": "2006-10-11",
       "title": "[일본어 한마디] 제 가방이 나오지 않는데요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259606,7 +259685,7 @@
       "date": "2006-10-08",
       "title": "[일본어 한마디] 자리에 앉아 주십시오",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259672,7 +259751,7 @@
       "date": "2006-09-25",
       "title": "[일본어 한마디] 이 가방은 기내에 가져갈 수 있나요?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259725,7 +259804,7 @@
       "date": "2006-09-20",
       "title": "[일본어 한마디] 비행기를 예약하고 싶은데요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -259871,7 +259950,7 @@
       "date": "2006-09-11",
       "title": "[일본어 한마디] 하청(업자)",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -260103,7 +260182,7 @@
       "date": "2006-09-05",
       "title": "[일본어 한마디] 절차, 일의 순서",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -260112,7 +260191,7 @@
       "date": "2006-09-04",
       "title": "[일본어 한마디] 타합, 미리 상의함",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -260121,7 +260200,7 @@
       "date": "2006-09-03",
       "title": "[일본어 한마디] 휴가를 내다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -260130,7 +260209,7 @@
       "date": "2006-09-01",
       "title": "[일본어 한마디] 견적",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -260139,7 +260218,7 @@
       "date": "2006-08-31",
       "title": "[일본어 한마디] 원고(환율 하락)",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -260148,7 +260227,7 @@
       "date": "2006-08-30",
       "title": "[일본어 한마디] 제휴",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -260349,7 +260428,7 @@
       "date": "2006-08-25",
       "title": "[일본어 한마디] 매상, 매출",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -260358,7 +260437,7 @@
       "date": "2006-08-24",
       "title": "[일본어 한마디] 연결해 드리다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -260367,7 +260446,7 @@
       "date": "2006-08-23",
       "title": "[일본어 한마디] 매번",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -260508,7 +260587,7 @@
       "date": "2006-08-20",
       "title": "[일본어 한마디] 부모에게 기대어 지내다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -260517,7 +260596,7 @@
       "date": "2006-08-18",
       "title": "[일본어 한마디] 큰 일을 위해 작은 일을 돌볼 여유가 없다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -260688,7 +260767,7 @@
       "date": "2006-08-14",
       "title": "[일본어 한마디] 발을 빼다, 손을 끊다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -260697,7 +260776,7 @@
       "date": "2006-08-14",
       "title": "[일본어 한마디] 적자가 나다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -260781,7 +260860,7 @@
       "date": "2006-08-10",
       "title": "[일본어 한마디] 엉덩방아를 찧다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -260902,7 +260981,7 @@
       "date": "2006-08-06",
       "title": "[일본어 한마디] 시비조로 덤비는 태도",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -261170,7 +261249,7 @@
       "date": "2006-08-02",
       "title": "[일본어 한마디] (공연히) 생돈을 들이다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -261179,7 +261258,7 @@
       "date": "2006-08-02",
       "title": "[일본어 한마디] 심중을 읽다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -261188,7 +261267,7 @@
       "date": "2006-07-28",
       "title": "[일본어 한마디] 속이 검다, 심보가 나쁘다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -261197,7 +261276,7 @@
       "date": "2006-07-27",
       "title": "[일본어 한마디] 가슴을 펴다, 당당하다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -261206,7 +261285,7 @@
       "date": "2006-07-26",
       "title": "[일본어 한마디] 발벗고 나서서 도와줌",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -261293,7 +261372,7 @@
       "date": "2006-07-26",
       "title": "[일본어 한마디] 손을(관계를) 끊다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -261363,7 +261442,7 @@
       "date": "2006-07-26",
       "title": "[일본어 한마디] 다섯 손가락에 들다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -261372,7 +261451,7 @@
       "date": "2006-07-26",
       "title": "[일본어 한마디] 감동시키다, 심금을 울리다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -261463,7 +261542,7 @@
       "date": "2006-07-26",
       "title": "[일본어 한마디] 손바닥을 뒤집다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -261628,7 +261707,7 @@
       "date": "2006-07-13",
       "title": "[일본어 한마디] 손에 땀을 쥐다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -261780,7 +261859,7 @@
       "date": "2006-07-10",
       "title": "[일본어 한마디] 편들다, 역성들다, 가세하다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -261863,7 +261942,7 @@
       "date": "2006-07-05",
       "title": "[일본어 한마디] 노래자랑",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -261872,7 +261951,7 @@
       "date": "2006-07-04",
       "title": "[일본어 한마디] 몹시 탐나다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -261881,7 +261960,7 @@
       "date": "2006-07-03",
       "title": "[일본어 한마디] (필요 이상으로)깊이 관여하다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -261890,7 +261969,7 @@
       "date": "2006-07-02",
       "title": "[일본어 한마디] 애타게 기다리다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -262301,7 +262380,7 @@
       "date": "2006-06-22",
       "title": "[일본어 한마디] 기가 막히게 맛있다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -262525,7 +262604,7 @@
       "date": "2006-06-19",
       "title": "[일본어 한마디] 입이 가볍다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -262534,7 +262613,7 @@
       "date": "2006-06-16",
       "title": "[일본어 한마디] 입이 무겁다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -262617,7 +262696,7 @@
       "date": "2006-06-14",
       "title": "[일본어 한마디] 내세우다, 뽐내다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -262626,7 +262705,7 @@
       "date": "2006-06-13",
       "title": "[일본어 한마디] 콧대가 높다, 우쭐해지다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -262635,7 +262714,7 @@
       "date": "2006-06-12",
       "title": "[일본어 한마디] 너그럽게 보아주다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -262644,7 +262723,7 @@
       "date": "2006-06-11",
       "title": "[일본어 한마디] 눈에 넣어도 아프지 않다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -262653,7 +262732,7 @@
       "date": "2006-06-10",
       "title": "[일본어 한마디] 사족을 못 쓰다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -262662,7 +262741,7 @@
       "date": "2006-06-09",
       "title": "[일본어 한마디] 안목이 높다, 보는 눈이 있다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -262746,7 +262825,7 @@
       "date": "2006-06-06",
       "title": "[일본어 한마디] 발이 넓다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -262822,7 +262901,7 @@
       "date": "2006-06-04",
       "title": "[일본어 한마디] 면목이 없다, 대할 낯이 없다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -262896,7 +262975,7 @@
       "date": "2006-05-31",
       "title": "[일본어 한마디] 약이 오르다, 화가 나다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -262905,7 +262984,7 @@
       "date": "2006-05-31",
       "title": "[일본어 한마디] 고개를 들지 못하다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -262914,7 +262993,7 @@
       "date": "2006-05-29",
       "title": "[일본어 한마디] 머리가 좋다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -262923,7 +263002,7 @@
       "date": "2006-05-28",
       "title": "[일본어 한마디] 머리가 아프다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263051,7 +263130,7 @@
       "date": "2006-05-24",
       "title": "[일본어 한마디] 식사 할래?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263060,7 +263139,7 @@
       "date": "2006-05-23",
       "title": "[일본어 한마디] 집합",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263128,7 +263207,7 @@
       "date": "2006-05-22",
       "title": "[일본어 한마디] 조퇴",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263197,7 +263276,7 @@
       "date": "2006-05-18",
       "title": "[일본어 한마디] 맛있다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263206,7 +263285,7 @@
       "date": "2006-05-17",
       "title": "[일본어 한마디] ~해 줘",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263215,7 +263294,7 @@
       "date": "2006-05-16",
       "title": "[일본어 한마디] 화장",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263224,7 +263303,7 @@
       "date": "2006-05-15",
       "title": "[일본어 한마디] 목, 해고",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263233,7 +263312,7 @@
       "date": "2006-05-14",
       "title": "[일본어 한마디] 사이",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263242,7 +263321,7 @@
       "date": "2006-05-12",
       "title": "[일본어 한마디] 배가 고프다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263251,7 +263330,7 @@
       "date": "2006-05-11",
       "title": "[일본어 한마디] 따님",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263381,7 +263460,7 @@
       "date": "2006-05-08",
       "title": "[일본어 한마디] ~어, ~야(여성 말투)",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263443,7 +263522,7 @@
       "date": "2006-05-04",
       "title": "[일본어 한마디] 어머,어머나",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263452,7 +263531,7 @@
       "date": "2006-05-03",
       "title": "[일본어 한마디] ~일까?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263588,7 +263667,7 @@
       "date": "2006-04-29",
       "title": "[일본어 한마디] ~요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263597,7 +263676,7 @@
       "date": "2006-04-27",
       "title": "[일본어 한마디] 모양이 틀어짐",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263783,7 +263862,7 @@
       "date": "2006-04-19",
       "title": "[일본어 한마디] 자수",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263834,7 +263913,7 @@
       "date": "2006-04-17",
       "title": "[일본어 한마디] 팬티 한 장",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263843,7 +263922,7 @@
       "date": "2006-04-16",
       "title": "[일본어 한마디] 치장하다, 멋 내다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263852,7 +263931,7 @@
       "date": "2006-04-14",
       "title": "[일본어 한마디] 평상복",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263861,7 +263940,7 @@
       "date": "2006-04-13",
       "title": "[일본어 한마디] 딱 어울리다, 정해지다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263870,7 +263949,7 @@
       "date": "2006-04-12",
       "title": "[일본어 한마디] 겨울용 속옷, 내복",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263879,7 +263958,7 @@
       "date": "2006-04-11",
       "title": "[일본어 한마디] 구깃구깃",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263888,7 +263967,7 @@
       "date": "2006-04-10",
       "title": "[일본어 한마디] 올이 풀리다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263964,7 +264043,7 @@
       "date": "2006-04-07",
       "title": "[일본어 한마디] 옷감, 천",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263973,7 +264052,7 @@
       "date": "2006-04-06",
       "title": "[일본어 한마디] 양복",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263982,7 +264061,7 @@
       "date": "2006-04-05",
       "title": "[일본어 한마디] 단벌신사",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -263991,7 +264070,7 @@
       "date": "2006-04-04",
       "title": "[일본어 한마디] (상의를) 입다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264000,7 +264079,7 @@
       "date": "2006-04-03",
       "title": "[일본어 한마디] 기모노,일본 옷",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264063,7 +264142,7 @@
       "date": "2006-03-31",
       "title": "[일본어 한마디] (옷을) 몸에 어울리게 입다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264072,7 +264151,7 @@
       "date": "2006-03-30",
       "title": "[일본어 한마디] 단 한 벌의 나들이옷",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264081,7 +264160,7 @@
       "date": "2006-03-29",
       "title": "[일본어 한마디] 따끈따끈, 포근함",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264090,7 +264169,7 @@
       "date": "2006-03-28",
       "title": "[일본어 한마디] 생글생글, 싱글벙글",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264099,7 +264178,7 @@
       "date": "2006-03-27",
       "title": "[일본어 한마디] 술술, 줄줄",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264108,7 +264187,7 @@
       "date": "2006-03-27",
       "title": "[일본어 한마디] 뿔뿔이, 부스스",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264190,7 +264269,7 @@
       "date": "2006-03-23",
       "title": "[일본어 한마디] 우물우물",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264199,7 +264278,7 @@
       "date": "2006-03-22",
       "title": "[일본어 한마디] 두근두근",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264282,7 +264361,7 @@
       "date": "2006-03-20",
       "title": "[일본어 한마디] 질퍽질퍽, 축축",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264291,7 +264370,7 @@
       "date": "2006-03-20",
       "title": "[일본어 한마디] 휘청휘청, 비틀비틀",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264300,7 +264379,7 @@
       "date": "2006-03-17",
       "title": "[일본어 한마디] 꼬르륵꼬르륵, 배가 몹시 고픔",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264309,7 +264388,7 @@
       "date": "2006-03-16",
       "title": "[일본어 한마디] 기진맥진함, 녹초가 됨",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264318,7 +264397,7 @@
       "date": "2006-03-15",
       "title": "[일본어 한마디] 주룩주룩, 좍좍",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264327,7 +264406,7 @@
       "date": "2006-03-14",
       "title": "[일본어 한마디] 꾸준히 노력함. 부지런함",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264336,7 +264415,7 @@
       "date": "2006-03-13",
       "title": "[일본어 한마디] 데굴데굴, 빈둥빈둥",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264345,7 +264424,7 @@
       "date": "2006-03-12",
       "title": "[현대 중국어] 말도 마세요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264415,7 +264494,7 @@
       "date": "2006-03-10",
       "title": "[일본어 한마디] 욱신욱신, 쿡쿡",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264473,7 +264552,7 @@
       "date": "2006-03-08",
       "title": "[일본어 한마디] 멍멍",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264610,7 +264689,7 @@
       "date": "2006-03-05",
       "title": "[일본어 한마디] 딱딱, 꽁꽁",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264619,7 +264698,7 @@
       "date": "2006-03-03",
       "title": "[일본어 한마디] (신나서) 마음이 들뜬 모양",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264824,7 +264903,7 @@
       "date": "2006-02-27",
       "title": "[일본어 한마디] 껍질을 벗기다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264833,7 +264912,7 @@
       "date": "2006-02-26",
       "title": "[일본어 한마디]물기를 빼다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264842,7 +264921,7 @@
       "date": "2006-02-24",
       "title": "[일본어 한마디] 퍼석퍼석하다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264851,7 +264930,7 @@
       "date": "2006-02-23",
       "title": "[일본어 한마디] 국물을 내다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264860,7 +264939,7 @@
       "date": "2006-02-21",
       "title": "[일본어 한마디]물을 끓이다 ",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264937,7 +265016,7 @@
       "date": "2006-02-19",
       "title": "[일본어 한마디] 오도독오도독, 씹히는 느낌이 나다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264946,7 +265025,7 @@
       "date": "2006-02-17",
       "title": "[일본어 한마디] 양념장, 소스",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -264955,7 +265034,7 @@
       "date": "2006-02-16",
       "title": "[일본어 한마디] 수고가 들다, 품이 들다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265111,7 +265190,7 @@
       "date": "2006-02-13",
       "title": "[일본어 한마디] 달걀을 풀다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265120,7 +265199,7 @@
       "date": "2006-02-12",
       "title": "[일본어 한마디] 찰싹찰싹, 잠길랑 말랑",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265129,7 +265208,7 @@
       "date": "2006-02-10",
       "title": "[일본어 한마디] 엷은 갈색, 여우 색",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265219,7 +265298,7 @@
       "date": "2006-02-08",
       "title": "[일본어 한마디] 기호, 취향, 입맛",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265228,7 +265307,7 @@
       "date": "2006-02-06",
       "title": "[일본어 한마디] 채치기",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265308,7 +265387,7 @@
       "date": "2006-02-03",
       "title": "[일본어 한마디]약한 불",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265317,7 +265396,7 @@
       "date": "2006-02-02",
       "title": "[일본어 한마디] 떫은 맛을 우려내다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265447,7 +265526,7 @@
       "date": "2006-01-30",
       "title": "[일본어 한마디] 고지식함, 꼼꼼함",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265456,7 +265535,7 @@
       "date": "2006-01-27",
       "title": "[일본어 한마디] 오기, 승부욕",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265465,7 +265544,7 @@
       "date": "2006-01-26",
       "title": "[일본어 한마디] 끈기가 있다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265534,7 +265613,7 @@
       "date": "2006-01-24",
       "title": "[일본어 한마디] 서글서글하다, 소탈하다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265543,7 +265622,7 @@
       "date": "2006-01-23",
       "title": "[일본어 한마디] 깔끔하다, 뒤끝이 없다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265552,7 +265631,7 @@
       "date": "2006-01-22",
       "title": "[일본어 한마디] 덜렁대다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265561,7 +265640,7 @@
       "date": "2006-01-20",
       "title": "[일본어 한마디] 온순하다, 고분고분하다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265570,7 +265649,7 @@
       "date": "2006-01-19",
       "title": "[일본어 한마디] 차갑다, 매정하다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265579,7 +265658,7 @@
       "date": "2006-01-18",
       "title": "[일본어 한마디] 적극적",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265588,7 +265667,7 @@
       "date": "2006-01-17",
       "title": "[일본어 한마디] 겸손하다, 저자세이다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265597,7 +265676,7 @@
       "date": "2006-01-16",
       "title": "[일본어 한마디] 촌스럽다. 멋없다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265734,7 +265813,7 @@
       "date": "2006-01-12",
       "title": "[일본어 한마디]상냥하다, 자상하다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265743,7 +265822,7 @@
       "date": "2006-01-11",
       "title": "[일본어 한마디] 배짱이 큼, 배포가 넓음",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265820,7 +265899,7 @@
       "date": "2006-01-09",
       "title": "[일본어 한마디] 사람이 좋음. 어수룩함",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265829,7 +265908,7 @@
       "date": "2006-01-08",
       "title": "[일본어 한마디]쩨쩨하다, 좀스럽다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265881,7 +265960,7 @@
       "date": "2006-01-05",
       "title": "[일본어 한마디]성급함, 조급함",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265890,7 +265969,7 @@
       "date": "2006-01-04",
       "title": "[일본어 한마디] 아니꼽다, 닭살이다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265899,7 +265978,7 @@
       "date": "2006-01-02",
       "title": "[일본어 한마디]~대에 오르다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -265908,7 +265987,7 @@
       "date": "2006-01-01",
       "title": "[일본어 한마디] ~를 밑돌다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -268261,7 +268340,7 @@
       "date": "2005-10-16",
       "title": "[일본어 한마디]100점을 맞다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -269881,7 +269960,7 @@
       "date": "2005-09-06",
       "title": "[일본어 한마디]유카타",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -271004,7 +271083,7 @@
       "date": "2005-08-10",
       "title": "[일본어 한마디] 행락",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -274990,7 +275069,7 @@
       "date": "2005-05-24",
       "title": "[일본어 한마디] 시작하는 부분 맞춰 줘",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -276114,7 +276193,7 @@
       "date": "2005-05-05",
       "title": "[일본어 한마디] 초호화 멤버로 보내 드리는 새 드라마.",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -285131,7 +285210,7 @@
       "date": "2004-12-10",
       "title": "[일본어 한마디] <461> 3년째에 바람피우는 것쯤 관대하게 봐줘",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -285240,7 +285319,7 @@
       "date": "2004-12-10",
       "title": "[일본어 한마디] <461> 3년째에 바람피우는 것쯤 관대하게 봐줘",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -285516,7 +285595,7 @@
       "date": "2004-12-06",
       "title": "[일본어 한마디]",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -285716,7 +285795,7 @@
       "date": "2004-12-03",
       "title": "[일본어 한마디] <455> 하라다씨한테 푹 빠졌다며?",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -286237,7 +286316,7 @@
       "date": "2004-11-24",
       "title": "[일본어 한마디] 독설에도 정도가 있지",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -294311,7 +294390,7 @@
       "date": "2004-07-26",
       "title": "[일본어 한마디] <345> 그렇게 눈에 쌍심지를 켤 일은 아닌 것 같은데…",
       "status": "error",
-      "attempts": 3,
+      "attempts": 4,
       "images": [
         "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/F2DK4J4GJIL2XXQH5OSVFGUSCE.jpg"
       ],
@@ -295431,7 +295510,7 @@
       "date": "2004-07-11",
       "title": "[일본어 한마디] <332> 둘이 먹다 하나 죽어도 모르겠다",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -296132,7 +296211,7 @@
       "date": "2004-06-30",
       "title": "[일본어 한마디] <323> 몸으로 터득하지 못해서 그래",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -297916,7 +297995,7 @@
       "date": "2004-06-04",
       "title": "[일본어 한마디] <300> 상상이 안 되네요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -298076,7 +298155,7 @@
       "date": "2004-05-31",
       "title": "[일본어 한마디] <297> 이번에는 실제로 사람이 나와서 하는 거예요.",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -301613,7 +301692,7 @@
       "date": "2004-04-01",
       "title": "[일본어 한마디] <246> 만우절이에요",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -308980,7 +309059,7 @@
       "date": "2003-12-08",
       "title": "[일본어 한마디] <152> 틀림없이 그럴 거라고 생각했는데",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -309410,7 +309489,7 @@
       "date": "2003-12-01",
       "title": "[일본어 한마디] <146> 부자 랭킹",
       "status": "error",
-      "attempts": 2,
+      "attempts": 3,
       "error": "ValueError"
     },
     {
@@ -310727,9 +310806,9 @@
     }
   ],
   "coverage": {
-    "discovered_at": "2026-10-27T01:49:21.091633+09:00",
+    "discovered_at": "2026-10-28T01:10:37.206341+09:00",
     "first_date": "2003-11-11",
-    "latest_date": "2026-10-27",
-    "feed_count": 5880
+    "latest_date": "2026-10-28",
+    "feed_count": 5881
   }
 }
