@@ -64,6 +64,21 @@ Render Free sleeps after inactivity, loses filesystem changes on restart/redeplo
 
 The project is deployed at **https://japanese-scraper.onrender.com** on Render Free in Singapore, serving the GitHub repository's `master` branch with automatic deployment on commits. The GitHub Actions `OLLAMA_API_KEY` secret is configured, and the daily workflow is active. Dashboard: https://dashboard.render.com/web/srv-dbea44i9lscs73af1dpg .
 
+## Firebase lesson storage
+
+Validated completed lessons are mirrored to Firebase project **JLPT practice (`jlpt-practice-20a4e`)**, Firestore collection **`japanese_lessons`**, with the publisher article ID as document ID. Sync metadata and archive status counts live at **`japanese_scraper/archive`**. Existing JLPT collections are untouched. The Flask site continues serving its versioned JSON snapshot to keep Render requests inexpensive.
+
+```sh
+# Uses local Google Application Default Credentials:
+.venv/bin/python -m scraper.firebase_sync
+```
+
+The daily ingestion workflow authenticates with Google Workload Identity Federation (repository and `master` branch restricted), then synchronizes completed lessons even if some OCR attempts failed. No service-account private key is used or required on Render. Changed records are written in bounded batches; matching hashes skip duplicate writes. Failed syncs prevent automatic continuation and fail the workflow, preserving the JSON archive for retry. Firestore failures do not mark a lesson transcription as failed. Rerunning sync resumes safely from already committed records. Do not run concurrent sync writers.
+
+To verify or retry just Firebase synchronization in GitHub Actions, manually run **Daily Japanese lessons** with **sync_only** selected. This does not call Ollama or trigger a backfill continuation.
+
+Firestore's existing security rules are preserved; access from another JLPT client is still subject to that client's existing permissions. See [API documentation](docs/API.md) for the persisted document schema.
+
 ## API and checks
 
 See [the API reference](docs/API.md) for parameters, response schemas, and errors. Codex must keep this reference synchronized with API changes, as required by `AGENTS.md`.

@@ -8,9 +8,14 @@ on:
         description: 'OCR batch size (0 = full archive with automatic continuation)'
         default: '0'
         required: true
+      sync_only:
+        description: 'Synchronize existing completed lessons to Firebase without running OCR'
+        type: boolean
+        default: false
 permissions:
   contents: write
   actions: write
+  id-token: write
 concurrency:
   group: japanese-archive-writer
   cancel-in-progress: false
@@ -26,13 +31,24 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
+      - uses: google-github-actions/auth@v3
+        id: firebase_auth
+        with:
+          project_id: jlpt-practice-20a4e
+          workload_identity_provider: projects/218704881410/locations/global/workloadIdentityPools/japanese-scraper/providers/github
+          service_account: japanese-lesson-sync@jlpt-practice-20a4e.iam.gserviceaccount.com
       - run: python -m pip install -r requirements.txt
       - name: Discover archive and transcribe batch
+        if: ${{ inputs.sync_only != true }}
         env:
           OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
           OLLAMA_MODEL: ${{ vars.OLLAMA_MODEL || 'gemma4:31b' }}
           OLLAMA_BASE_URL: https://ollama.com
         run: python -m scraper.cli --limit "$BATCH_LIMIT" --workers 3 --max-seconds 1200 --summary "$RUNNER_TEMP/batch-summary.json"
+      - name: Save validated lessons to Firebase
+        id: firebase_sync
+        if: ${{ always() && steps.firebase_auth.outcome == 'success' }}
+        run: python -m scraper.firebase_sync
       - name: Save progress, including failed attempts
         id: save
         if: ${{ always() }}
@@ -46,7 +62,7 @@ jobs:
             git push origin "HEAD:$GITHUB_REF_NAME"
           fi
       - name: Continue full backfill while making progress
-        if: ${{ always() && steps.save.outcome == 'success' }}
+        if: ${{ always() && inputs.sync_only != true && steps.save.outcome == 'success' && steps.firebase_sync.outcome == 'success' }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

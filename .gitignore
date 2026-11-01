@@ -6,3 +6,6 @@ __pycache__/
 .DS_Store
 
 .playwright-mcp/
+
+# Short-lived Google Workload Identity credential files
+gha-creds-*.json

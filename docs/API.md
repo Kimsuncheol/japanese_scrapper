@@ -100,6 +100,12 @@ After discovery, `coverage` contains `discovered_at` (ISO 8601 timestamp with Se
 
 Returns `200` with `{"status": "ok"}`. This checks Flask availability; it does not test upstream services, model credentials, or archive completeness.
 
+## Firebase persistence
+
+Completed, validated lessons are also saved to Cloud Firestore in Firebase project `jlpt-practice-20a4e`, in `japanese_lessons/{article_id}`. Each document contains the article object described above plus `_sync_hash` (source-record SHA-256) and `_synced_at` (Firestore server timestamp). `japanese_scraper/archive` contains discovery coverage, status counts, discovered/ready totals, source repository, and `last_sync` timestamp. Pending/failed articles remain in the JSON archive and metadata counts; they are not published as complete lessons.
+
+The daily workflow synchronizes new or changed lessons before automatically continuing a backfill. Unchanged records are skipped, newer Firestore transcriptions are preserved, and synchronization never deletes documents. Existing JLPT collections and Firestore client security rules are unchanged. These are server-written documents using IAM authentication, not a new public write API. Flask continues serving the versioned JSON snapshot, so HTTP routes, pagination, schemas, and errors remain unchanged; sync-only fields are not added to API responses.
+
 ## Furigana display
 
 HTML lesson titles, expressions, and Japanese example sentences render supplied readings as semantic `<ruby>` annotations above kanji runs only. Kana and punctuation are not annotated. Consecutive kanji use word-level readings rather than guessed character-by-character pronunciation. Missing, inconsistent, or ambiguous readings leave the source text unannotated. API responses continue to provide the original plain `japanese` and full `reading` strings; no HTML is added to JSON fields.
