@@ -67,8 +67,11 @@ Returns one article object, irrespective of its transcription status. Use the op
 | Field | Type | Meaning |
 | --- | --- | --- |
 | `expressions` | array of expression objects | At least one expression. |
+| `vocabulary` | array of expression objects | Footer glossary terms below the source image’s dashed separator, displayed in Lesson notes; defaults to `[]`. Uses the expression shape below, normally with empty `examples`. |
 | `notes` | array of strings | Additional transcribed notes; defaults to `[]`. |
 | `uncertain_text` | array of strings | Illegible or uncertain text flagged by the model; defaults to `[]`. |
+
+The `expressions` array contains the main teaching expressions and their dialogues, not footer glossary terms. Legacy bare entries after the lead expression are moved to `vocabulary` when they have neither examples nor an explanation; entries with teaching content remain expressions. Existing free-form `notes` are retained.
 
 Each expression has a nonempty `japanese` string, plus `reading`, `translation`, and `explanation` strings (default `""`), and an `examples` array (default `[]`). Each example has a required `japanese` string and optional `reading` and `translation` strings (default `""`). Translations and explanations preserve Korean source text. Empty optional fields indicate missing text, not a guaranteed translation. Model transcription is not guaranteed accurate.
 
@@ -85,6 +88,7 @@ Illustrative lesson shape (not an actual article response):
       "examples": []
     }
   ],
+  "vocabulary": [],
   "notes": [],
   "uncertain_text": []
 }

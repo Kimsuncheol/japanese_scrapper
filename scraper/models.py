@@ -17,5 +17,6 @@ class Expression(BaseModel):
 
 class Lesson(BaseModel):
     expressions: list[Expression] = Field(min_length=1)
+    vocabulary: list[Expression] = Field(default_factory=list)
     notes: list[str] = Field(default_factory=list)
     uncertain_text: list[str] = Field(default_factory=list)

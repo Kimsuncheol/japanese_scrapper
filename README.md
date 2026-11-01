@@ -64,6 +64,12 @@ Render Free sleeps after inactivity, loses filesystem changes on restart/redeplo
 
 The project is deployed at **https://japanese-scraper.onrender.com** on Render Free in Singapore, serving the GitHub repository's `master` branch with automatic deployment on commits. The GitHub Actions `OLLAMA_API_KEY` secret is configured, and the daily workflow is active. Dashboard: https://dashboard.render.com/web/srv-dbea44i9lscs73af1dpg .
 
+## Lesson notes and glossary
+
+The source image's glossary below the dashed horizontal separator belongs to the **Lesson notes** section, not the numbered main expressions. New extraction puts these terms in `lesson.vocabulary`, with Japanese, reading, and Korean meaning. Free-form `lesson.notes` remains supported. Both are rendered together, with furigana above kanji in structured vocabulary entries.
+
+Run `.venv/bin/python -m scraper.lesson_notes` to organize legacy records. It preserves the lead expression and entries with explanations/dialogue; other standalone entries move intact into vocabulary. No words, readings, translations, or existing notes are discarded. The daily workflow applies this before Firebase synchronization, including sync-only runs.
+
 ## Firebase lesson storage
 
 Validated completed lessons are mirrored to Firebase project **JLPT practice (`jlpt-practice-20a4e`)**, Firestore collection **`japanese_lessons`**, with the publisher article ID as document ID. Sync metadata and archive status counts live at **`japanese_scraper/archive`**. Existing JLPT collections are untouched. The Flask site continues serving its versioned JSON snapshot to keep Render requests inexpensive.

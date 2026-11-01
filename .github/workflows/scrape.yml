@@ -45,6 +45,9 @@ jobs:
           OLLAMA_MODEL: ${{ vars.OLLAMA_MODEL || 'gemma4:31b' }}
           OLLAMA_BASE_URL: https://ollama.com
         run: python -m scraper.cli --limit "$BATCH_LIMIT" --workers 3 --max-seconds 1200 --summary "$RUNNER_TEMP/batch-summary.json"
+      - name: Organize lesson notes
+        if: ${{ always() && steps.firebase_auth.outcome == 'success' }}
+        run: python -m scraper.lesson_notes
       - name: Save validated lessons to Firebase
         id: firebase_sync
         if: ${{ always() && steps.firebase_auth.outcome == 'success' }}
