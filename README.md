@@ -66,7 +66,7 @@ The project is deployed at **https://japanese-scraper.onrender.com** on Render F
 
 ## Lesson notes and glossary
 
-The source image's glossary below the dashed horizontal separator belongs to the **Lesson notes** section, not the numbered main expressions. New extraction puts these terms in `lesson.vocabulary`, with Japanese, reading, and Korean meaning. Free-form `lesson.notes` remains supported. Both are rendered together, with furigana above kanji in structured vocabulary entries.
+The source image's glossary below the dashed horizontal separator belongs to the **Lesson notes** section, not the numbered main expressions. New extraction puts these terms in `lesson.vocabulary`, with Japanese, reading, and Korean meaning. For compatibility with the Daily Japanese app, `lesson.notes` includes a plain-text copy of every glossary entry as well as existing free-form notes. The website excludes those copies when rendering structured vocabulary to avoid duplicates. Both are rendered together, with furigana above kanji in structured vocabulary entries.
 
 Run `.venv/bin/python -m scraper.lesson_notes` to organize legacy records. It preserves the lead expression and entries with explanations/dialogue; other standalone entries move intact into vocabulary. No words, readings, translations, or existing notes are discarded. The daily workflow applies this before Firebase synchronization, including sync-only runs.
 

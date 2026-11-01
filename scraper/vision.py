@@ -7,6 +7,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_ollama import ChatOllama
 
 from .models import Lesson
+from .lesson_notes import organize_lesson
 from .source import image_bytes
 
 
@@ -41,7 +42,7 @@ def extract(urls):
             text = text.strip()
             if text.startswith('```'):
                 text = text.split('\n', 1)[1].rsplit('```', 1)[0]
-            return Lesson.model_validate_json(text).model_dump()
+            return organize_lesson(Lesson.model_validate_json(text).model_dump())
         except Exception:
             if attempt == 2:
                 raise

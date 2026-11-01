@@ -4,6 +4,22 @@ from copy import deepcopy
 from .models import Lesson
 
 
+def glossary_note(term):
+    text = term['japanese']
+    if term.get('reading'):
+        text += ' (' + term['reading'] + ')'
+    for field in ('translation', 'explanation'):
+        if term.get(field):
+            text += ' — ' + term[field]
+    return text
+
+
+def plain_notes(lesson):
+    """Hide compatibility copies when the website renders structured glossary."""
+    generated = {glossary_note(term) for term in lesson.get('vocabulary', [])}
+    return [note for note in lesson.get('notes', []) if note not in generated]
+
+
 def organize_lesson(lesson):
     result = deepcopy(lesson)
     expressions = result['expressions']
@@ -18,6 +34,12 @@ def organize_lesson(lesson):
             vocabulary.append(expression)
     result['expressions'] = main
     result['vocabulary'] = vocabulary
+    notes = list(result.get('notes', []))
+    for term in vocabulary:
+        note = glossary_note(term)
+        if note not in notes:
+            notes.append(note)
+    result['notes'] = notes
     Lesson.model_validate(result)
     return result
 

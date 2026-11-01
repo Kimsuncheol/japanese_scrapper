@@ -3,10 +3,12 @@ from flask import Flask, abort, jsonify, render_template, request
 from dotenv import load_dotenv
 from scraper.storage import read
 from scraper.furigana import furigana
+from scraper.lesson_notes import plain_notes
 
 load_dotenv()
 app = Flask(__name__)
 app.jinja_env.filters["furigana"] = furigana
+app.jinja_env.filters["plain_notes"] = plain_notes
 
 
 def listing():

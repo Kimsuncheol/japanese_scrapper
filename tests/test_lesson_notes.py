@@ -14,7 +14,8 @@ def test_legacy_glossary_moves_without_losing_content():
     assert original == before
     assert organized['expressions'] == [lead, second_lesson]
     assert organized['vocabulary'] == [term]
-    assert organized['notes'] == ['existing note']
+    assert organized['notes'][0] == 'existing note'
+    assert '本当 (ほんとう) — 정말, 진짜' in organized['notes']
     assert organize_lesson(organized) == organized
 
 
@@ -41,3 +42,21 @@ def test_glossary_renders_only_inside_lesson_notes(tmp_path, monkeypatch):
     assert '<ruby>本当<rp>(</rp><rt>ほんとう</rt>' in notes
     assert '정말, 진짜' in notes and 'preserved note' in notes
     assert client.get('/api/articles/notes').json['lesson']['vocabulary'][0]['japanese']=='本当'
+
+
+def test_notes_only_client_receives_glossary_and_web_does_not_duplicate(tmp_path, monkeypatch):
+    from scraper import storage
+    from app import app
+    lesson = organize_lesson({'expressions':[{'japanese':'虹がかかる'}],
+        'vocabulary':[{'japanese':'本当','reading':'ほんとう','translation':'정말, 진짜'}],
+        'notes':['issue 5036']})
+    assert lesson['notes'] == ['issue 5036','本当 (ほんとう) — 정말, 진짜']
+    assert organize_lesson(lesson) == lesson
+    monkeypatch.setenv('DATA_PATH',str(tmp_path/'archive.json'))
+    storage.write({'coverage':{},'articles':[{'id':'compat','date':'2026-11-02','title':'lesson',
+        'status':'ready','url':'https://www.chosun.com/source','images':[],'lesson':lesson}]})
+    client=app.test_client()
+    assert client.get('/api/articles/compat').json['lesson']['notes'] == lesson['notes']
+    html=client.get('/articles/compat').get_data(as_text=True)
+    assert html.count('정말, 진짜') == 1
+    assert 'issue 5036' in html

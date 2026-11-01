@@ -12,6 +12,7 @@ from google.cloud import firestore
 
 from . import storage
 from .models import Lesson
+from .lesson_notes import organize_lesson
 
 PROJECT = 'jlpt-practice-20a4e'
 COLLECTION = 'japanese_lessons'
@@ -35,6 +36,7 @@ def sync(data, client=None):
     batch = client.batch()
     queued = 0
     for article in ready:
+        article = {**article, 'lesson': organize_lesson(article['lesson'])}
         Lesson.model_validate(article.get('lesson'))
         article_id = article['id']
         if not article_id or '/' in article_id or article_id in {'.', '..'}:

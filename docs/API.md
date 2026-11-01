@@ -68,10 +68,10 @@ Returns one article object, irrespective of its transcription status. Use the op
 | --- | --- | --- |
 | `expressions` | array of expression objects | At least one expression. |
 | `vocabulary` | array of expression objects | Footer glossary terms below the source image’s dashed separator, displayed in Lesson notes; defaults to `[]`. Uses the expression shape below, normally with empty `examples`. |
-| `notes` | array of strings | Additional transcribed notes; defaults to `[]`. |
+| `notes` | array of strings | Additional transcribed notes plus a plain-text copy of each vocabulary entry for notes-only clients; defaults to `[]`. |
 | `uncertain_text` | array of strings | Illegible or uncertain text flagged by the model; defaults to `[]`. |
 
-The `expressions` array contains the main teaching expressions and their dialogues, not footer glossary terms. Legacy bare entries after the lead expression are moved to `vocabulary` when they have neither examples nor an explanation; entries with teaching content remain expressions. Existing free-form `notes` are retained.
+The `expressions` array contains the main teaching expressions and their dialogues, not footer glossary terms. Legacy bare entries after the lead expression are moved to `vocabulary` when they have neither examples nor an explanation; entries with teaching content remain expressions. Existing free-form `notes` are retained. Each vocabulary term is also published once in `notes` as `Japanese (reading) — Korean meaning` (optional reading/explanation omitted when absent). This supports existing Daily Japanese clients that read only `notes`. Clients rendering structured `vocabulary` should exclude these generated copies from their free-form notes display to avoid duplication; the Flask website does this automatically.
 
 Each expression has a nonempty `japanese` string, plus `reading`, `translation`, and `explanation` strings (default `""`), and an `examples` array (default `[]`). Each example has a required `japanese` string and optional `reading` and `translation` strings (default `""`). Translations and explanations preserve Korean source text. Empty optional fields indicate missing text, not a guaranteed translation. Model transcription is not guaranteed accurate.
 

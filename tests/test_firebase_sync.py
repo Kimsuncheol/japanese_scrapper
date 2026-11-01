@@ -70,7 +70,7 @@ def test_only_validated_ready_lessons_and_idempotent_sync():
     db.docs['users/existing'] = {'keep':'untouched'}
     first = sync(data, db)
     assert first['updated'] == 1
-    assert db.docs[COLLECTION+'/ready']['lesson'] == data['articles'][0]['lesson']
+    assert db.docs[COLLECTION+'/ready']['lesson']['expressions'] == data['articles'][0]['lesson']['expressions']
     assert db.docs['users/existing'] == {'keep':'untouched'}
     assert db.docs[METADATA]['counts'] == {'ready':1,'pending':1,'error':1}
     assert sync(data, db)['unchanged'] == 1
