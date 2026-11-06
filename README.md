@@ -87,7 +87,7 @@ Firestore's existing security rules are preserved; access from another JLPT clie
 
 ## API and checks
 
-See [the API reference](docs/API.md) for parameters, response schemas, and errors. Codex must keep this reference synchronized with API changes, as required by `AGENTS.md`.
+Open [/docs](https://japanese-scraper.onrender.com/docs) for the HTML documentation, generated directly from `docs/API.md`. See [the API reference](docs/API.md) for parameters, response schemas, and errors. Codex must keep this reference synchronized with API changes, as required by `AGENTS.md`.
 
 - `GET /api/articles?page=1&status=ready&q=...` — ten records per page; status also accepts `all`, `pending`, or `error`.
 - `GET /api/articles/<id>` — source, provenance, images and structured lesson.

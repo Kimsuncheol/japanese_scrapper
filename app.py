@@ -1,4 +1,7 @@
 import math
+from pathlib import Path
+from markdown_it import MarkdownIt
+from markupsafe import Markup
 from flask import Flask, abort, jsonify, render_template, request
 from dotenv import load_dotenv
 from scraper.storage import read
@@ -61,3 +64,10 @@ def api_article(article_id):
 @app.get('/health')
 def health():
     return {'status': 'ok'}
+
+
+@app.get('/docs')
+def api_docs():
+    source = (Path(app.root_path) / 'docs' / 'API.md').read_text(encoding='utf-8')
+    rendered = MarkdownIt('commonmark', {'html': False}).enable('table').render(source)
+    return render_template('api_docs.html', reference=Markup(rendered))

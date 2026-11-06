@@ -116,6 +116,8 @@ HTML lesson titles, expressions, and Japanese example sentences render supplied 
 
 ## HTML pages
 
+- `GET /docs`: public HTML API reference rendered directly from this file. Includes parameter tables and code examples; no authentication is required. Raw HTML in Markdown is escaped.
+
 - `GET /`: renders the article list with the same query parameters, defaults, filtering, pagination, and validation as `/api/articles`.
 - `GET /articles/<article_id>`: renders an article's lesson or transcription status; unknown IDs return `404`.
 
