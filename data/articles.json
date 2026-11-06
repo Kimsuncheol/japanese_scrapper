@@ -54920,7 +54920,7 @@
       "date": "2023-02-24",
       "title": "일본은행 차기 총재 “금융 완화 지속하겠다”",
       "status": "error",
-      "attempts": 17,
+      "attempts": 18,
       "images": [
         "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/SMYDP5QQOBP2HA22I5RGKBKGOM.jpg"
       ],
@@ -63017,11 +63017,11 @@
       "date": "2022-07-27",
       "title": "日 코로나 난민 속출... 39도 발열 환자, 검사 받으려고 30군데 전화",
       "status": "error",
-      "attempts": 17,
+      "attempts": 18,
       "images": [
         "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/4UZYWQ6M5FNBNMKMT4PBUTUW2I.jpg"
       ],
-      "error": "ValidationError"
+      "error": "ResponseError"
     },
     {
       "id": "Z5F6TQZ5AZB2ZECRU7XBSRPLPY",
@@ -64495,11 +64495,11 @@
       "date": "2022-06-27",
       "title": "러시아 원유 사들이는 중국·인도...G7 경제 제재 안먹히네",
       "status": "error",
-      "attempts": 17,
+      "attempts": 18,
       "images": [
         "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/LWSSHUXH7VJFPEUGRGRVW7JBJU.jpg"
       ],
-      "error": "ValidationError"
+      "error": "ResponseError"
     },
     {
       "id": "FPRQUM23CNH5LD4SFVO4NWJ2SA",
@@ -74354,11 +74354,11 @@
       "date": "2021-10-21",
       "title": "日 활화산 아소산 분화, 화산재 3.5㎞ 상공까지 치솟아",
       "status": "error",
-      "attempts": 17,
+      "attempts": 18,
       "images": [
         "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/S6K5HWAMZNC27EYMXE4EU5RXFE.jpg"
       ],
-      "error": "ValidationError"
+      "error": "ResponseError"
     },
     {
       "id": "LX6DVVBYZNBYPL67HYP6K7NILA",
@@ -328638,7 +328638,7 @@
     }
   ],
   "coverage": {
-    "discovered_at": "2026-11-06T01:09:45.233872+09:00",
+    "discovered_at": "2026-11-07T01:08:43.671886+09:00",
     "first_date": "2003-11-11",
     "latest_date": "2026-11-06",
     "feed_count": 5888
