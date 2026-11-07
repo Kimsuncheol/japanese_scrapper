@@ -89333,7 +89333,7 @@
       "date": "2020-08-12",
       "title": "[입에 착착 붙는 일본어] 억울한 죄를 뒤집어쓰다",
       "status": "error",
-      "attempts": 17,
+      "attempts": 18,
       "error": "ValueError"
     },
     {
@@ -177612,11 +177612,11 @@
       "date": "2014-04-17",
       "title": "[스피킹이 강해지는 일본어] 의심을 품다",
       "status": "error",
-      "attempts": 17,
+      "attempts": 18,
       "images": [
         "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/6Y3I337G5EKQCZZKDGM7IVTSDU.jpg"
       ],
-      "error": "ValidationError"
+      "error": "ResponseError"
     },
     {
       "id": "O4NXBYMKVNNBV7Z5TDIGZUSITM",
@@ -193708,7 +193708,7 @@
       "date": "2013-03-04",
       "title": "[스피킹이 강해지는 일본어] (창피해서) 얼굴이 화끈 달아오르다",
       "status": "error",
-      "attempts": 17,
+      "attempts": 18,
       "error": "ValueError"
     },
     {
@@ -194096,7 +194096,7 @@
       "date": "2013-02-20",
       "title": "[스피킹이 강해지는 일본어] 전혀, 도무지",
       "status": "error",
-      "attempts": 17,
+      "attempts": 18,
       "error": "ValueError"
     },
     {
@@ -196241,7 +196241,7 @@
       "date": "2012-12-20",
       "title": "[스피킹이 강해지는 일본어] 뜻, 취지",
       "status": "error",
-      "attempts": 17,
+      "attempts": 18,
       "error": "ValueError"
     },
     {
@@ -199685,7 +199685,7 @@
       "date": "2012-09-19",
       "title": "[스피킹이 강해지는 일본어] 대략적임",
       "status": "error",
-      "attempts": 17,
+      "attempts": 18,
       "error": "ValueError"
     },
     {
@@ -200894,7 +200894,7 @@
       "date": "2012-08-15",
       "title": "[스피킹이 강해지는 일본어] 압수하다",
       "status": "error",
-      "attempts": 17,
+      "attempts": 18,
       "error": "ValueError"
     },
     {
@@ -202766,7 +202766,7 @@
       "date": "2012-06-22",
       "title": "[스피킹이 강해지는 일본어] (적당히)받아넘기다, 한 귀로 듣고 한 귀로 흘리다",
       "status": "error",
-      "attempts": 17,
+      "attempts": 18,
       "error": "ValueError"
     },
     {
@@ -328638,7 +328638,7 @@
     }
   ],
   "coverage": {
-    "discovered_at": "2026-11-07T01:08:43.671886+09:00",
+    "discovered_at": "2026-11-08T01:08:08.367330+09:00",
     "first_date": "2003-11-11",
     "latest_date": "2026-11-06",
     "feed_count": 5888
