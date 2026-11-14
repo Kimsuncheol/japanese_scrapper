@@ -4,7 +4,7 @@ This document describes the current Flask API in `app.py` and lesson schema in `
 
 Production base URL: `https://japanese-scraper.onrender.com`. Render Free may need time to wake after inactivity. Local examples below use `http://localhost:5000`; substitute the production base URL for hosted requests.
 
-All endpoints are read-only and require no authentication. Successful API responses use `application/json`. Errors currently use Flask's default HTML error responses, including on `/api/` routes. No API endpoint starts ingestion or accepts an Ollama key.
+All endpoints are read-only and require no authentication. Successful API responses use `application/json`. Errors currently use Flask's default HTML error responses, including on `/api/` routes. No API endpoint starts ingestion or accepts model credentials.
 
 ## List articles
 
@@ -108,7 +108,7 @@ Returns `200` with `{"status": "ok"}`. This checks Flask availability; it does n
 
 Completed, validated lessons are also saved to Cloud Firestore in Firebase project `jlpt-practice-20a4e`, in `japanese_lessons/{article_id}`. Each document contains the article object described above plus `_sync_hash` (source-record SHA-256) and `_synced_at` (Firestore server timestamp). `japanese_scraper/archive` contains discovery coverage, status counts, discovered/ready totals, source repository, and `last_sync` timestamp. Pending/failed articles remain in the JSON archive and metadata counts; they are not published as complete lessons.
 
-The daily workflow synchronizes new or changed lessons before automatically continuing a backfill. Unchanged records are skipped, newer Firestore transcriptions are preserved, and synchronization never deletes documents. Existing JLPT collections and Firestore client security rules are unchanged. These are server-written documents using IAM authentication, not a new public write API. Flask continues serving the versioned JSON snapshot, so HTTP routes, pagination, schemas, and errors remain unchanged; sync-only fields are not added to API responses.
+The daily workflow discovers articles without model calls and synchronizes existing validated lessons. Newly discovered articles remain pending; automatic transcription and backfill continuation have been removed. Unchanged records are skipped, newer Firestore transcriptions are preserved, and synchronization never deletes documents. Existing JLPT collections and Firestore client security rules are unchanged. These are server-written documents using IAM authentication, not a new public write API. Flask continues serving the versioned JSON snapshot, so HTTP routes, pagination, schemas, and errors remain unchanged; sync-only fields are not added to API responses.
 
 ## Furigana display
 

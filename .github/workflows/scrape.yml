@@ -4,17 +4,12 @@ on:
     - cron: '0 16 * * *' # 01:00 Asia/Seoul the following day
   workflow_dispatch:
     inputs:
-      limit:
-        description: 'OCR batch size (0 = full archive with automatic continuation)'
-        default: '0'
-        required: true
       sync_only:
-        description: 'Synchronize existing completed lessons to Firebase without running OCR'
+        description: 'Synchronize existing completed lessons to Firebase without discovering articles'
         type: boolean
         default: false
 permissions:
   contents: write
-  actions: write
   id-token: write
 concurrency:
   group: japanese-archive-writer
@@ -23,8 +18,6 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     timeout-minutes: 40
-    env:
-      BATCH_LIMIT: ${{ inputs.limit || '0' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -38,13 +31,9 @@ jobs:
           workload_identity_provider: projects/218704881410/locations/global/workloadIdentityPools/japanese-scraper/providers/github
           service_account: japanese-lesson-sync@jlpt-practice-20a4e.iam.gserviceaccount.com
       - run: python -m pip install -r requirements.txt
-      - name: Discover archive and transcribe batch
+      - name: Discover archive without transcription
         if: ${{ inputs.sync_only != true }}
-        env:
-          OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
-          OLLAMA_MODEL: ${{ vars.OLLAMA_MODEL || 'gemma4:31b' }}
-          OLLAMA_BASE_URL: https://ollama.com
-        run: python -m scraper.cli --limit "$BATCH_LIMIT" --workers 3 --max-seconds 1200 --summary "$RUNNER_TEMP/batch-summary.json"
+        run: python -m scraper.cli --discover-only
       - name: Organize lesson notes
         if: ${{ always() && steps.firebase_auth.outcome == 'success' }}
         run: python -m scraper.lesson_notes
@@ -52,7 +41,7 @@ jobs:
         id: firebase_sync
         if: ${{ always() && steps.firebase_auth.outcome == 'success' }}
         run: python -m scraper.firebase_sync
-      - name: Save progress, including failed attempts
+      - name: Save discovered archive
         id: save
         if: ${{ always() }}
         run: |
@@ -64,24 +53,3 @@ jobs:
             git pull --rebase origin "$GITHUB_REF_NAME"
             git push origin "HEAD:$GITHUB_REF_NAME"
           fi
-      - name: Continue full backfill while making progress
-        if: ${{ always() && inputs.sync_only != true && steps.save.outcome == 'success' && steps.firebase_sync.outcome == 'success' }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          python - <<'PY'
-          import json, os, pathlib, subprocess
-          path = pathlib.Path(os.environ['RUNNER_TEMP']) / 'batch-summary.json'
-          if not path.exists():
-              raise SystemExit('No batch summary; automatic continuation stopped.')
-          summary = json.loads(path.read_text())
-          print(json.dumps(summary))
-          if (os.environ['BATCH_LIMIT'] == '0' and summary['remaining']
-                  and summary['completed'] and not summary['blocked']):
-              subprocess.run(['gh', 'workflow', 'run', 'scrape.yml', '--ref',
-                              os.environ['GITHUB_REF_NAME'], '-f', 'limit=0'], check=True)
-          elif summary['remaining']:
-              print('Unfinished articles remain. See failures/quota before restarting.')
-          else:
-              print('All discovered lessons are transcribed.')
-          PY
