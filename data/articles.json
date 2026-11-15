@@ -1,6 +1,13 @@
 {
   "articles": [
     {
+      "id": "36LECIOH3NEE5LS3BQURP5ZNQU",
+      "url": "https://www.chosun.com/national/nie/japanese/2026/11/16/36LECIOH3NEE5LS3BQURP5ZNQU/",
+      "date": "2026-11-16",
+      "title": "[입에 착착 붙는 일본어] ~할 수밖에 없다",
+      "status": "pending"
+    },
+    {
       "id": "56BSZ5M5GVBS7OESI4DCS24EMM",
       "url": "https://www.chosun.com/national/nie/japanese/2026/11/13/56BSZ5M5GVBS7OESI4DCS24EMM/",
       "date": "2026-11-13",
@@ -328863,9 +328870,9 @@
     }
   ],
   "coverage": {
-    "discovered_at": "2026-11-15T01:07:55.269294+09:00",
+    "discovered_at": "2026-11-16T01:08:25.437154+09:00",
     "first_date": "2003-11-11",
-    "latest_date": "2026-11-13",
-    "feed_count": 5893
+    "latest_date": "2026-11-16",
+    "feed_count": 5894
   }
 }
