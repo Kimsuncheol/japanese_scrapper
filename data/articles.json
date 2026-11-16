@@ -6,7 +6,7 @@
       "date": "2026-11-16",
       "title": "[입에 착착 붙는 일본어] ~할 수밖에 없다",
       "status": "error",
-      "attempts": 1,
+      "attempts": 2,
       "images": [
         "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/A42UWO3YUZEC7AIW4F63NJON5I.jpg"
       ],
@@ -328875,7 +328875,7 @@
     }
   ],
   "coverage": {
-    "discovered_at": "2026-11-16T16:57:32.772041+09:00",
+    "discovered_at": "2026-11-16T23:20:50.730218+09:00",
     "first_date": "2003-11-11",
     "latest_date": "2026-11-16",
     "feed_count": 5894
