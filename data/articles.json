@@ -5,7 +5,12 @@
       "url": "https://www.chosun.com/national/nie/japanese/2026/11/16/36LECIOH3NEE5LS3BQURP5ZNQU/",
       "date": "2026-11-16",
       "title": "[입에 착착 붙는 일본어] ~할 수밖에 없다",
-      "status": "pending"
+      "status": "error",
+      "attempts": 1,
+      "images": [
+        "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/A42UWO3YUZEC7AIW4F63NJON5I.jpg"
+      ],
+      "error": "HTTPError"
     },
     {
       "id": "56BSZ5M5GVBS7OESI4DCS24EMM",
@@ -328870,7 +328875,7 @@
     }
   ],
   "coverage": {
-    "discovered_at": "2026-11-16T16:47:51.688839+09:00",
+    "discovered_at": "2026-11-16T16:57:32.772041+09:00",
     "first_date": "2003-11-11",
     "latest_date": "2026-11-16",
     "feed_count": 5894
