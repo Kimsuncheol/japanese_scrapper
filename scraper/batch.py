@@ -54,7 +54,7 @@ def process(data, pending, workers=1, max_seconds=0):
                     response = getattr(exc, 'response', None)
                     code = code or getattr(response, 'status_code', None)
                     # Stop on model quota/auth failures instead of failing the entire archive.
-                    if code in {401, 403, 429}:
+                    if code in {401, 402, 403, 429}:
                         blocked = True
                     print('Failed:', article['id'], type(exc).__name__, 'status', code, flush=True)
                 storage.write(data)

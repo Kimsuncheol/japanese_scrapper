@@ -28,14 +28,15 @@ def test_missing_model_key_never_downloads_images(monkeypatch):
         vision.extract(['image'])
 
 
-def test_auth_failure_is_not_retried(monkeypatch):
+@pytest.mark.parametrize('status', [401, 402, 403, 429])
+def test_auth_or_billing_failure_is_not_retried(monkeypatch, status):
     monkeypatch.setenv('OLLAMA_API_KEY', 'fixture-secret')
     monkeypatch.setattr(vision, 'image_bytes', lambda url: (b'fixture', 'image/jpeg'))
     calls = []
     def post(url, **kwargs):
         calls.append(url)
         response = requests.Response()
-        response.status_code = 401
+        response.status_code = status
         return response
     monkeypatch.setattr(vision.requests, 'post', post)
     with pytest.raises(requests.HTTPError):

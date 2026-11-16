@@ -42,7 +42,7 @@ def extract(urls):
                 text = text.split('\n', 1)[1].rsplit('```', 1)[0]
             return organize_lesson(Lesson.model_validate_json(text).model_dump())
         except requests.HTTPError as exc:
-            if exc.response.status_code in {401, 403, 429} or attempt == 2:
+            if exc.response.status_code in {401, 402, 403, 429} or attempt == 2:
                 raise
         except (requests.RequestException, ValueError, KeyError, TypeError):
             if attempt == 2:
