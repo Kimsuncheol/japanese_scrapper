@@ -1,7 +1,7 @@
 name: Daily Japanese lessons
 on:
   schedule:
-    - cron: '0 16 * * *' # 01:00 Asia/Seoul the following day
+    - cron: '0 14 * * 1-5' # 23:00 Asia/Seoul, Monday–Friday
   workflow_dispatch:
     inputs:
       sync_only:
@@ -31,9 +31,12 @@ jobs:
           workload_identity_provider: projects/218704881410/locations/global/workloadIdentityPools/japanese-scraper/providers/github
           service_account: japanese-lesson-sync@jlpt-practice-20a4e.iam.gserviceaccount.com
       - run: python -m pip install -r requirements.txt
-      - name: Discover archive without transcription
+      - name: Discover archive and transcribe the latest lesson
         if: ${{ inputs.sync_only != true }}
-        run: python -m scraper.cli --discover-only
+        env:
+          OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+          OLLAMA_MODEL: ${{ vars.OLLAMA_MODEL || 'gemma4:31b' }}
+        run: python -m scraper.cli --transcribe-latest
       - name: Organize lesson notes
         if: ${{ always() && steps.firebase_auth.outcome == 'success' }}
         run: python -m scraper.lesson_notes
