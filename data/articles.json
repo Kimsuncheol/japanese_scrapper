@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "id": "XDDDPLXH2RDPNBOLASZARRHABI",
+      "url": "https://www.chosun.com/national/nie/japanese/2026/11/17/XDDDPLXH2RDPNBOLASZARRHABI/",
+      "date": "2026-11-17",
+      "title": "[입에 착착 붙는 일본어] 여봐란듯이",
+      "status": "error",
+      "attempts": 1,
+      "images": [
+        "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/EYPTSAT3MNEFJAYTENNAMPSRTY.jpg"
+      ],
+      "error": "HTTPError"
+    },
+    {
       "id": "36LECIOH3NEE5LS3BQURP5ZNQU",
       "url": "https://www.chosun.com/national/nie/japanese/2026/11/16/36LECIOH3NEE5LS3BQURP5ZNQU/",
       "date": "2026-11-16",
@@ -328875,9 +328887,9 @@
     }
   ],
   "coverage": {
-    "discovered_at": "2026-11-16T23:20:50.730218+09:00",
+    "discovered_at": "2026-11-17T23:10:00.461355+09:00",
     "first_date": "2003-11-11",
-    "latest_date": "2026-11-16",
-    "feed_count": 5894
+    "latest_date": "2026-11-17",
+    "feed_count": 5895
   }
 }
