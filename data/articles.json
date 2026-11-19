@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "id": "YVCSUL7TLNEIZHAYAZNGV5UAFI",
+      "url": "https://www.chosun.com/national/nie/japanese/2026/11/19/YVCSUL7TLNEIZHAYAZNGV5UAFI/",
+      "date": "2026-11-19",
+      "title": "[입에 착착 붙는 일본어] 엘리베이터가 멈추다",
+      "status": "error",
+      "attempts": 1,
+      "images": [
+        "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/SZU5NXAXFZFCVAEUY3VYMY2QUE.jpg"
+      ],
+      "error": "HTTPError"
+    },
+    {
       "id": "DKKN3UEOGJAX5EMQ65VAU4EZSM",
       "url": "https://www.chosun.com/national/nie/japanese/2026/11/18/DKKN3UEOGJAX5EMQ65VAU4EZSM/",
       "date": "2026-11-18",
@@ -328899,9 +328911,9 @@
     }
   ],
   "coverage": {
-    "discovered_at": "2026-11-18T23:10:04.598442+09:00",
+    "discovered_at": "2026-11-19T23:09:54.454600+09:00",
     "first_date": "2003-11-11",
-    "latest_date": "2026-11-18",
-    "feed_count": 5896
+    "latest_date": "2026-11-19",
+    "feed_count": 5895
   }
 }
