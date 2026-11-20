@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "id": "YTLHJT6ASJF63JFDLRN64BLTPA",
+      "url": "https://www.chosun.com/national/nie/japanese/2026/11/20/YTLHJT6ASJF63JFDLRN64BLTPA/",
+      "date": "2026-11-20",
+      "title": "[입에 착착 붙는 일본어] 세태를 반영하다, 사회상을 담아내다",
+      "status": "error",
+      "attempts": 1,
+      "images": [
+        "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/JFEFOPWLYNEZFKD4IMOXWNT4IU.jpg"
+      ],
+      "error": "HTTPError"
+    },
+    {
       "id": "YVCSUL7TLNEIZHAYAZNGV5UAFI",
       "url": "https://www.chosun.com/national/nie/japanese/2026/11/19/YVCSUL7TLNEIZHAYAZNGV5UAFI/",
       "date": "2026-11-19",
@@ -328911,9 +328923,9 @@
     }
   ],
   "coverage": {
-    "discovered_at": "2026-11-19T23:09:54.454600+09:00",
+    "discovered_at": "2026-11-20T23:10:14.206576+09:00",
     "first_date": "2003-11-11",
-    "latest_date": "2026-11-19",
-    "feed_count": 5895
+    "latest_date": "2026-11-20",
+    "feed_count": 5898
   }
 }
