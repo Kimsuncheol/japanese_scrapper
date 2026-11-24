@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "id": "YQ6JQAVPWNHI5EX2R5HLBRPXVU",
+      "url": "https://www.chosun.com/national/nie/japanese/2026/11/24/YQ6JQAVPWNHI5EX2R5HLBRPXVU/",
+      "date": "2026-11-24",
+      "title": "[입에 착착 붙는 일본어] 늘어지다, 지루하게 길어지다",
+      "status": "error",
+      "attempts": 1,
+      "images": [
+        "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/4SACRC3ZSBGGND4T72ZVXOVUBI.jpg"
+      ],
+      "error": "HTTPError"
+    },
+    {
       "id": "JXT6JN7IKRCR7OQCPHS7MLIOSA",
       "url": "https://www.chosun.com/national/nie/japanese/2026/11/23/JXT6JN7IKRCR7OQCPHS7MLIOSA/",
       "date": "2026-11-23",
@@ -328935,9 +328947,9 @@
     }
   ],
   "coverage": {
-    "discovered_at": "2026-11-23T23:10:48.731851+09:00",
+    "discovered_at": "2026-11-24T23:10:25.520296+09:00",
     "first_date": "2003-11-11",
-    "latest_date": "2026-11-23",
-    "feed_count": 5899
+    "latest_date": "2026-11-24",
+    "feed_count": 5900
   }
 }
