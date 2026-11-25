@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "id": "CVRAX77SARDDNNFIXICTW643RA",
+      "url": "https://www.chosun.com/national/nie/japanese/2026/11/25/CVRAX77SARDDNNFIXICTW643RA/",
+      "date": "2026-11-25",
+      "title": "[입에 착착 붙는 일본어] 뜨거운 물에 담가 두다",
+      "status": "error",
+      "attempts": 1,
+      "images": [
+        "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/LQEMJUDDEBGQVB6GT64VSGAL3A.jpg"
+      ],
+      "error": "HTTPError"
+    },
+    {
       "id": "YQ6JQAVPWNHI5EX2R5HLBRPXVU",
       "url": "https://www.chosun.com/national/nie/japanese/2026/11/24/YQ6JQAVPWNHI5EX2R5HLBRPXVU/",
       "date": "2026-11-24",
@@ -328947,9 +328959,9 @@
     }
   ],
   "coverage": {
-    "discovered_at": "2026-11-24T23:10:25.520296+09:00",
+    "discovered_at": "2026-11-25T23:10:41.201490+09:00",
     "first_date": "2003-11-11",
-    "latest_date": "2026-11-24",
-    "feed_count": 5900
+    "latest_date": "2026-11-25",
+    "feed_count": 5901
   }
 }
