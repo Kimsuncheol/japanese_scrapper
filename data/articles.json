@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "id": "63X5WYX6TFG5XNELDZMZ5AX3EY",
+      "url": "https://www.chosun.com/national/nie/japanese/2026/11/27/63X5WYX6TFG5XNELDZMZ5AX3EY/",
+      "date": "2026-11-27",
+      "title": "[입에 착착 붙는 일본어] 날씨가 점점 나빠지다",
+      "status": "error",
+      "attempts": 1,
+      "images": [
+        "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/UVPOMHMG4VFK7MDRNKMTE7IXBU.jpg"
+      ],
+      "error": "HTTPError"
+    },
+    {
       "id": "QDGCEUSVFRGH5KHXGP4SJUAZS4",
       "url": "https://www.chosun.com/national/nie/japanese/2026/11/26/QDGCEUSVFRGH5KHXGP4SJUAZS4/",
       "date": "2026-11-26",
@@ -328971,9 +328983,9 @@
     }
   ],
   "coverage": {
-    "discovered_at": "2026-11-26T23:10:27.015036+09:00",
+    "discovered_at": "2026-11-27T23:09:48.252911+09:00",
     "first_date": "2003-11-11",
-    "latest_date": "2026-11-26",
-    "feed_count": 5902
+    "latest_date": "2026-11-27",
+    "feed_count": 5903
   }
 }
